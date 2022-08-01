@@ -1,0 +1,3747 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="chortcut icon" type="image/x-icon" href="favicon.ico">
+
+  <title>D5 conspectum patronum</title>
+<style>
+body {text-align: center; background: #bad;}
+.biv {border-radius: 15px;}
+.okey {border-radius: 3px 50px 50px 3px;}
+.kod {padding: 10px; background: #e9ffc7; width: 85%; text-align: left; margin: auto; color: #000;}
+.no {position: relative; counter-increment: num;}
+.no::after {content: counter(num);  position: absolute;  bottom: 0;  right: 3px; color:#943212;}
+.no1 {padding: 10px; background: #eee; width: 350px;text-align: left; margin: auto;}
+.no2 {padding: 10px; background: #eee; width: 400px;text-align: left; margin: auto;}
+.no3 {padding: 10px; background: #eee; width: 450px;text-align: left; margin: auto;}
+.no4{padding: 10px; background: #eee; width: 500px;text-align: left; margin: auto;}
+.no5{padding: 10px; background: #eee; width: 550px;text-align: left; margin: auto;}
+.no6{padding: 10px; background: #eee; width: 600px;text-align: left; margin: auto;}
+.no7{padding: 10px; background: #eee; width: 650px;text-align: left; margin: auto;}
+.bbb {text-decoration: underline;font-weight: bold;}
+.q {padding-left: 12px;}
+table {margin: auto;border-collapse: collapse;}
+.t292 td {background: white; text-align: center; border: 1px solid green; margin: auto;}
+.img2 {width:32px; height: 32px; background-image: url(icon866.png);}
+.cross {width:21px; height: 18px; background-image: url(cross.png); color: #c75050;}
+.mara {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAIAAAAS8MqlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEsSURBVDhPnZC9TsMwFIV5RXZ4BF6BjpHYwgQrCxLpEDEQJ6FlohJMaQOoQvyUhZaGspHE8U+55lbErU0j9egosm/O5yN76zsvNrDCTg09Pb/oIdMLbK4Jtp3O5XrSjsE3iqI1ZI2lb5+9x2wuZRzHwIRhSAjRo7qX2iRAUsKiZegiCOxYOoK2KelP2rdjyP2esxCS3e6VBZNSSCG44CDEVLWaCdy6rvtH1thglPWGU5JMvJt3zB2cP+x7d1wIx3GAQa1icCpWMc4Qg4kacg7r2dcMbMEGr9n18CNIxmfLbXsn6e5xf/swgYkF04UYY7xiVVVRCqYlTFYxXb7v123te9V2ZGszDW8AIdVBS1oWpXLejMFvbGt5qm3HejfTiJlqxv4TBuxYozfC8uIHUDp6oFBQcH0AAAAASUVORK5CYII=);
+cursor: pointer;
+width: 18px; 
+height: 19px; 
+position: absolute; 
+right: 0px; 
+top: 0px;}
+
+.arw1 {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAaCAIAAAAi3QukAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADaSURBVEhL7dU/CoMwGIfhtLvgGTyC4BFyBHdXnZxd2snZqbPOHiFHEDxCF126eQOb4I9KNJ/in6GFPot+Ci8xiF4Yu/f9rSgKdpgMnQAratsW2b3GkGVZuLbLFcfDfi/0fHBbFwvc0i2GZMVNKgxKUHZdxjHo6NC04qU1FVGIkKEiIgcDRb3ZTdN0H2WAO+vUsw5mKxKx7ec432IW4tmWFY1MeyRbdephGKidNhl3n9hsJxJaq0pc6gUCIiRNWyz3l1p0SDK1qNj/M7Lu+0Kn/ddUKAxfmHZj7A2AUMD2jqLX/AAAAABJRU5ErkJggg==);
+width: 24px;
+height: 26px;
+position: absolute;
+right: 19px;
+top: 0px;}
+
+.arw2 {
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAYCAIAAACeHvEiAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACTSURBVDhPY3z8+DEDZWDv3r0gU3h5eaECZIENGzYwQZmUgRFpyr1prgICBbuhPKyAkClAI4yqTkM5OAFeU4gzAghwm0K0EUCAwxRSjAAC7Kbc27GeeCOAALspSlm7P5xrM4XyCAPc4QI0iWiDcJsCBEQbhNcUICDOoNGSATsYTKYwLliwAMqkADBmZmZCmWQDBgYAEREw62fOWlkAAAAASUVORK5CYII=);
+width: 23px;
+height: 24px;
+position: absolute;
+right: 19px;
+top: 0px;}
+
+
+.arw3 {
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAIAAAAmKNuZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD/SURBVEhL7ZUxCoMwFIZj94JnEHoBwSPkCM52NZNTBw/g0MnJWWePEDyACF6g4OQBvIF9wVdK25ikRujSb8p7yKfvf0KcsizJfjjzPOPRGsaY+LooisZxxN5WmqZp2/aAFSFHOxbJU7cLP9ANXDBgpUSrGwrqh2F4vWGtRqPjiZ92eDZBpeOJGz7+8S713Xdo8RHAqg6GBFeQ9ZOMPgvwuVfkOhFY2oGLMw9bZsh1HuPwfhhQMo+S1WHBWJ+lkQnWFqRaBc0nMC7IQpQkodIBNF8LXY5Gt8RY1/XlhLUarQ7wqMBoxSa6L/jrtrOzDm+yqqqwYQHcZE4cx1jZQ8gdbyd5L/2LcWoAAAAASUVORK5CYII=);
+width: 26px;
+height: 26px;
+position: absolute;
+right: 19px;
+top: 0px;}
+
+</style>
+
+
+</head>
+<body>
+<!-- <a href="#y21"> 21 </a>
+<a href="#y46"> 46 </a>
+<a href="#y52"> 52 </a>
+<a href="#y157"> 157 </a>
+<a href="#y283"> 283 </a>
+<a href="#y43"> 43 </a>
+<a href="#y"> 1 </a>
+<a href="#y"> 1 </a>
+<a href="#y"> 1 </a>
+<a href="#y"> 1 </a>
+<a href="#y"> 1 </a>
+<a href="#y"> 1 </a>
+<a href="#y"> 1 </a>
+<a href="#y"> 1 </a><br> -->
+<img src="angel.png" alt="" class="okey">
+<h1>The Delphi Is Good...</h1>
+<img src="bives2.png" alt="" class="biv">
+
+<hr>
+<div class="no no1">
+<a id="y0"></a>0<br>
+Если при загрузке Windows нажмешь Shift то Автозагрузка не выполнится.<br>
+В системном каталоге винды лежат библиотеки, дрова, шрифты<br>
+Каталог <span class="img1"></span>винды содержит приложения винды, файлы инициализации и файлы справок .hlp<br>
+
+FPS в QIII cg_drawfps 1<br>
+<div class="kod">
+<span class="bbb">var</span><br><span class="bbb"></span>
+a: <span class="bbb">array</span>[0..1] <span class="bbb">of byte</span>;<br>
+b: <span class="bbb">word absolute</span> a;<br>
+</div>
+Константа и процедура могут иметь одно имя<br>
+&amp;#8195 - Em пробел<br>
+<a href="#y67">67 стр</a> - Protect, Privat<br>
+(a as TLabel).Caption:=TLabel(a).Caption<br>
+</div>
+<hr>
+<div class="no1" style="text-align: center; width:88%;">
+<a id="y1"></a><br>
+Нет плюса, кроме плюса, но C++ самый приплюснутый из плюсов.<br>
+Программист не знающий C подобен сосуду не имеющему дна (энштейн 1.5.02)<br>
+-Вот отстой! А, может, ну их на фиг, эти утренние бредни? Может, типа, в школу пойдем?<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y3"></a>3<br>
+Нотепад++<br>
+20.05.2018<br>
+Документ отображается в кодировке macCirillic вместо Win1251<br>
+Чтобы исправить иди<br>
+[Опции->Настройки->Разное]<br>
+Авто-определение кодировки символов<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y5"></a>5<br>
+Потоки Stream
+<div class="kod">
+#include <iostream.h><br>
+void main()<br>
+{<br>
+	cout << "Welcome to C++\n";<br>
+}<br>
+</div>
+Поток cin приносит символы с клавы
+</div>
+<hr>
+<div class="no no1">
+<a id="y8"></a>8<br>
+Объявление переменных<br>
+int the_data<br>
+тип переменной | имя<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y9"></a>9<br>
+Классы и объекты<br>
+Если есть класс screenclass, то можно создать объект этого класса screen<br>
+screenclass screen<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y10"></a>10<br>
+Объявление класса<br>
+<div class="kod">
+#include &lt;iostream.h&gt;<br>
+class DataCL<br>
+{private: int privateDMember;<br>
+public:<br>
+int publicDMember;<br>
+int publicMetod(void);}<br>
+</div>
+тип возвращаемого<br>
+имя метода входящие параметры<br>
+</div>
+
+
+<hr>
+<div class="no no1">
+<a id="y11"></a>11<br>
+Модификатор доступа<br>
+Ключевое слово, которое определяет как можно пользоваться. Может быть трех типов<br>
+<span class="bbb">private</span> - переенная класса является закрытой, с ней могут работать только обьекты этого класса<br>
+<span class="bbb">public</span> - открытая переменная. Её можно обрращаться в любом месте проги<br>
+<span class="bbb">protected</span> - ограниченный доступ. Юзать могут только обьекты этого класса, а также классов, производных от него<br>
+</div>
+
+
+
+
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y20"></a>20<br>
+Изготовление окна, неубирающегося с экрана<br>
+Неплохо будет если форма<br>
+borderstyle=bsNone<br>
+color=clblack<br>
+windowState=wsMaximized<br>
+закрываемое только от Alt+f4<br>
+ещё ctrl+esc, Проект->закрыть<br>
+Alt+ctrl+del->завершить задачу<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y21"></a>21<br>
+Формы Delphi 5<br>
+Описывается в свойстве form.borderstyle<br>
+bsSizeable - обычная<br>
+bsDialog - без изменения габаритов, только <span class="cross">_ _</span>, без значка<br>
+bsNone - нет ничего! :-)<br>
+bsSingle - нет габаритов<br>
+bsSizeToolwin - только <span class="cross">_ _</span>, нет значка<br>
+bsToolWindows - нет габариттов, в только <span class="cross">_ _</span>, нет значка<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y22"></a>22<br>
+Код проекта<br>
+Чтобы увидеть исходный код проекта надо сделать<br>
+View\ProjectSource<br>
+Сохранение проекта нажать<br>
+file>SaveAll<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y23"></a>23<br>
+StringGrid<br>
+Свойства left, top задают положение на форме<br>
+height,width - габариты сетки в пикселях<br>
+fixedcols, fixedrows - число не прокручиваемых кнопок и рядов, не доступных для ввода данных<br>
+colcount, rowcount - габориты в ячейках<br>
+options.goEditing - дает возможности редактировать содержимое строки в ячейке<br>
+cells[acol,arav]: string - текст в ячейке<hr>
+Суть в том,что в StringGrid нет места для хранения информации о цветах ячеек, он нужен как инструмент вывода матрицы, хранящейся отдельно<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y24"></a>24<br>
+глюк:Делфи5 При компиляции проекта по клав F9 Без комментариев в наглую удаляет из моего листинга, из моего исходника, строки, которые ему не нравятся!<br>
+---<br>
+Отрисовка ячейки - 3<br>
+2018<div class="kod">
+procedure tform1.stringgroid1.draweCell(...)<br>
+begin<br>
+with stringgrid1 do<br>
+begin<div class="q">
+canvas.brush.color:=a[acol,arow]<br>
+canvas.fillrect(rect);<br>
+end;</div>
+end;</div>
+
+где а - массив [5,5]of tcolor<br>
+Для закраски по массиву делай<br>
+stringGrid1.invalidate<br>
+это вызовет DraweCell<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y25"></a>25<br>
+Отрисовка ячейки (цветной)<br>
+Юзается эвент в стринг гриде onDrawCell(!!!)<br>
+нет далее <a href="#y52">см.52</a><div class="kod">
+procedure tform1.....<br>
+begin<br>
+with stringgrid1 do<div class="q">
+if objects[acol,arow]&lt;>nil then<div class="q">
+begin<div class="q">
+canvas.brush.color:=clred;<br>
+canvas.fillrect(rect); // закраска ячейки</div>
+end</div></div>
+end</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y26"></a>26<br>
+Вставка Паскалевского Кода<br>
+Проходит хорошо. Херачим процедуру в implementation, после {$R*.DFM}<br>
+
+</div>
+<hr>
+<div class="no no1">
+<a id="y27"></a>27<br>
+Преобразование типов переменных<br>
+Имеют место примеры<br>
+integer('A')<br>
+char(48)<br>
+boolean(0)<br>
+color(2)<br>
+longint(@buffer)<br>
+ord(true)<br>
+i:=integer('A')<br>
+Выражение, присваивает переменной i величину равную 65.<br>
+Еще можешь преобразовать числа в строки и обратно<br>
+s:=inttostr(a)<br>
+a:=strtoint(label1.caption);<br>
+Дает '0' или'1' из boolean в строку<br>
+s:=inttostr(word(b))<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y28"></a>28<br>
+Ошибка readln<br>
+Когда Delphi встречает при выполнении оператор readln, то выдает:<br>
+Project gridell raised exception class EIno1tError with message 'i/o error 104'. Process stopped. Use Stop or Run to continue.<br>
+При этом выполнение (отладка) останавливается на строке исходника, вызвавшей ошибку. На нее указывает зеленая стрелка. При наведении на оператор курсора мыши всплывает подсказка<br>
+readln=Inaccessible value// недоступная<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y29"></a>29<br>
+Координаты мыши<br>
+Ложим на форму 3 лейбла<br>
+События формы OnMouseMove<div class="kod">
+procedure ....<br>
+begin<div class="q">
+label1.caption:='событие мыши -onMouseMove'<br>
+label2.caption:=inttostr(x);<br>
+label3.caption:=inttostr(y);</div>
+end</div>
+Глобальные<br>
+p:tpoint<br>
+getcursorpos(p);<br>
+Ещё дает глобальные<br>
+m: tmouse;<br>
+x:=m.cursorpos.x;<br>
+2013 год x:=Mouse.CursorPos;<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y30"></a>30<br>
+Опрос клавы событиеми<br>
+OnKeyDown, OnKeyUp<br>
+Кладу на форму лабел, переименовываю его в В<br>
+в событиях формы - OnKeyDown<div class="kod">
+procedure tform1..OnKeyDown<br>
+begin<div class="q">
+case key of<div class="q">
+vk_left:b.left=b.left-1;<br>
+vk_right:b.left=b.left+1;<br>
+vk_up:b.top=b.top-1;<br>
+vk_down:b.top=b.top+1;<br>
+vk_escape: close;</div>
+end;</div>
+end;</div>
+Происходит движение лейбла по форме<br>
+vk_ - типа виртуальная клавиша <br>
+В этих событиях key|Word читает токо виртуальные коды клавишьб символы не читает<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y31"></a>31<br>
+Чтение символа с клавы<br>
+Доступен токо с события OnKeyPress<br>
+Читает символ<br>
+Добавляю в предыдущий листинг<div class="kod">
+procedurte tform1.OnKeyPress(... var key: char);// В данном событии key - char<br>
+begin<div class="q">
+b.caption:=key</div>
+end;</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y32"></a>32<br>
+Иконка проекта<br>
+Project<br>
+ProjectOpnions->Application<br>
+Title<br>
+Help File<br>
+Browse<br>
+Icon<br>
+Load Icon<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y33"></a>33<br>
+Цикл <span class="bbb">for</span> в Дельфе<br>
+Переменная юзаемая как счетчик цикла for не является переменной. Делфа не допускает каких либо манипуляций с переменной цикла, кроме чтения.<br>
+Команда<br>
+for i:=1 to 50 do i:=i+1<br>
+счиается не корректной<br>
+рекомендация юзать локальную i<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y34"></a>34<br>
+2-я форма в приложении<br>
+В приложении может быть сколько угодно форм. Каждой форме соответствует unit.<br>
+Добавление формы в проект File|NewForm<br>
+По умолчанию все формы создаются автоматически при запуске проги. Одна из форм является главной<br>
+Главная имеет следующие отличия:<br>
+1) Получает управление при запуске проги<br>
+2) Закрытие её означает закрытие проги<br>
+3) Может быть невидимой, но если закрыты все остальные, то она становится видимой<br>
+Project|Options|Forms>Позволяет назначить Главную форму, Автоматически создаваемые и Доступные.<br>
+Если форма автоматически не создается, позаботьтесь о её создании - CreateForm<br>
+Событие OnCreate<br>
+Видимость формы: Show, ShowModal<br>
+Событие OnShow<br>
+Невидимость Hide, событие onHide<br>
+Закрытие - Close<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y35"></a>35<br>
+Модальная форма<br>
+Она получает управление и не отдает его программе, пока не будет закрыта. Визуализируется методом ShowModal.<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y36"></a>36<br>
+Пример модальной формы<br>
+Создаю форму 1. Ложу на неё батон 1<br>
+Создаю форму 2. Кладу на неё батон 1.<br>
+Раз первой я создал Form1, то она - Главная<br>
+Ей в implementation добавляю uses unit2;<br>
+События: на Form1.Button1Click: <div class="kod">Form2.ShowModal;</div>
+На Form2.Button2Click: <div class="kod">Form2.Close;</div>
+</div>
+<hr>
+<div class="no no3">
+<a id="y37"></a>37<br>
+Переходы между формами<br>
+Создал две формы<br>
+В обеих в implementation добавил<br>
+в form1: uses unit2;<br>
+в form2: uses unit1;<br>
+Это типа чтоб они друг друга видели<hr>
+Tform1.button1click=>form2.show;<hr>
+tform2.button1click=>form2.close;<hr>
+tform2.formCloseQuery=>form1.label1.caption:=form2.edit1.text<br>
+Это дает передачу параметра из form2 в form1<br>
+Для того чтоб проделать это с переменной её надо <span class="bbb">сделать публичной</span>
+в form1 обьявить её в разделе public В этом случае она становится видна из Form2<br>
+---<br>
+boolean в строку true/false<br>
+result:=copy('FalseTrue',1+word(x)*5,5-word(x));<br>
+***<br>
+result:=string(pchar('False'#0'True'#0)+word(x)*6); <br>
+Odessit Vadim<br>
+---<br>
+Boolean в integer<br>
+ord(true)<br>
+---<br>
+Разрыв бесконечности<br>
+Application.ProcessMessages();<br>
+---<br>
+<table class="t292"><tr><td>
+байт</td><td>б/знак</td><td>знаковая</td><td>действительное</td></tr><tr><td>
+1</td><td>byte</td><td>shortint</td><td></td></tr><tr><td>
+2</td><td>word</td><td>smallint</td><td></td></tr><tr><td>
+4</td><td>longword<br>Cardinal</td><td>integer<br>longint</td><td>single</td></tr><tr><td>
+6</td><td></td><td></td><td>real48</td></tr><tr><td>
+8</td><td></td><td>int64</td><td>comp<br>real<br>double<br>currency</td></tr><tr><td>
+10</td><td></td><td></td><td>extended</td></tr></table>
+
+<!--
+1 байт<br>
+byte -shortint *<br>
+2 байта<br>
+word -smallint *<br>
+4 байта<br>
+longword,Cardinal -integer,longint single<br>
+6 байт<br>
+* * real48<br>
+8 байт<br>
+* -int64 comp,real,double,currency<br>
+10 байт<br>
+* * extended<br>
+
+-->
+
+round(12.75)=13 // округление с плавающей запятой до целдого<br>
+trunc(12.75)=12 // целочисленная часть<br>
+int(12.75)=12 // тоже что trunc, но вещественное<br>
+frac(12.75)=0.75 // дробная часть числа с плавающей запятой<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y39"></a>39<br>
+Типы данных Delphi 5.0<br>
+byte 1<br>
+word 2<br>
+set of char 32<br>
+set of byte 32<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y40"></a>40<br>
+Работа с файлами<br>
+На форму memo1 и четыре батона.<br>
+Обозвать соответственно: assign,open,read,close<br>
+в implementation varы f1:text; s: string;<br>
+События при кликах:1) assignfile(f1,'e:\japan.jp');//ассигновать<br>
+2) reset(f1);<br>
+reset(f1,2);// открыть нетипиз, размер блока=2 байта<br>
+3) readln(f1,s);// чтение файла<br>
+memo1.lines[0]:=s+#13#10;<br>
+4)close(f1)//закрыть файл<br>
+Все почти как в паскале, токо chr значения идут через решетку<br>
+rewrite(f) - новый создать<br>
+erase(f) -  удаление<br>
+</div>
+<hr>
+<div class="no no2">
+<a id="y41"></a>41<br>
+file not found и др. i/o<br>
+Реакция на отсутствие файла<div class="kod">
+assignfile(f,n)// const n='1.txt'<br>
+{$I-}<br>
+reset(f);<br>
+{$I+}<br>
+if ioResult&lt;>0 then begin<br>
+showmessage('file not '+n); halt(2) <br>
+end;</div>
+
+Или ещё вариант<div class="kod">
+try<div class="q">
+picture.loadfromfile(n);//const n='1.txt'</div>
+except<div class="q">
+on EIno1tError do showmessage('file not '+n); </div>
+end;</div>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y43"></a>43<br>
+Для удобства открытия.сохранения файлов существует диалог OpenDialog<br>
+<img src="od.png" alt=""> Для его вызова следует вызвать функцию OpenDialog1.Execute<br>
+Например r:=OpenDialog1.execute возвращает булеан открываемый файл или нет.<div class="kod">
+if OpenDialog1.Execute then begin<div class="q">
+// операции с файлом</div>
+end;</div>
+Имя файла возвращается в OpenDialog1.FileName<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y44"></a>44<br>
+Корни, log и ...<br>
+стр855<br>
+Корень извлекается квадратный sqrt<br>
+sqr - возедение в квадрат<br>
+sqrt - квадр корень<br>
+логарифмы<br>
+ln - натуральный, основание e<br>
+log2 - двоичный<br>
+log10 - десятичный<br>
+Qiller exp(1/3.0*ln(x)) // работает руль!<br>
+y:=exp(1/3.0*ln(x))<br>
+IntPower<br>
+Power(x,e)//x: real// возводит х в произвольную степень Е (uses math)<br>
+write(x:4:2)// 4-?,2- знаков после запятой<br>
+10^27=exp(27*ln(10))<br>
+---<br>
+Возведение в степень заменили на exp(y*ln(x))<br>
+function Power:extended<br>
+function IntPower;extended// в целочисленную степень<br>
+без разницы отрицательные и положительные основания степени<br>
+корень третьей степени из х=х в степени одна третья<br>
+---<br>
+Экспотенциальная запись - представление действительных чисел в виде мантиссы и порядка<div class="kod">
+N=M*nP</div>
+мантисса<br>
+основание показательной функции<br>
+порядок<br>
+характеристика числа<br>
+1,0*10^-6<br>
+Компьютерный способ экспоненой записи<br>
+1,602E-19<br>
+мантисса<br>
+E(exponent) означающая "умножить на десять в степени"<br>
+порядок<br>
+* Мантисса - дробная часть логарифма<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y45"></a>45<br>
+Animate<br>
+Компонент из библиотеки win32/<br>
+Помимо прочего avi воспроизводит клипы виндовс. Всего 8 штук. Расположены хранятся в Shell32.dll<br>
+Каждый от 8 до 38 кадров<br>
+Activate:=true<br>
+CommonAVI:=avi.RecicleFile<br>
+FileName=..\Demos\Coolstuf\cool.avi<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y46"></a>46<br>
+ Диалоговое окно MessageDlgPos<br>
+ Форма, кнопка. Событие onClick кнопки.<br>
+ if MessageDlgPos('continue?', mtCustom, mbOKCancel, 0, 200,200)=mrOK then beep;<br>
+ <form><button>Ok</button> <button>Cancel</button></form><br>
+ выводит на экран окно<br>
+ типы окна: mtWarning, mtError, mtInformation,mtConfirmation, mtCustom<br>
+ 
+ <img src="mt1.png" alt="">
+ <img src="mt2.png" alt="">
+ <img src="mt3.png" alt="">
+ Возвращаемые величины<br>
+ mrNone<br>
+ mrAbort <br>
+ mrYes<br>
+ mrOK<br>
+ mrRetry<br>
+ mrNo<br>
+ mrCancel<br>
+ mrIgnore<br>
+ mrAll<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y47"></a>47<br>
+ShowMessage -простой аналог MessageDlgPos<br>
+unit: Dialogs<br>
+ShowMessage('Привет!');<br>
+InputBox - маленький диалог для ввода строки<br>
+Проверка четности введенного числа<br>
+if odd(strtoint(inputbox('Test','Enter Chislo: ','0')))then showmessage('не четное')<br>
+102<br>
+---<br>
+MessageBox<br>
+MessageBox(0,pchar(s),'all right=)',MB_ICONEXELAMATION+MB_OK);<br>
+со звуком<br>
+</div>
+
+
+
+<hr>
+<div class="no no1">
+<a id="y51"></a>51<br>
+StatusBar<br>
+На форме размещается в низу окна<br>
+Свойство SimplePanel=false<br>
+Panels - задает текст в каждой панели и их число<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y52"></a>52<br>
+Отрисовка ячейки - 2<br>
+procedure полнейшая ахинея<br>
+***<br>
+Кадастровый номер 1<br>
+from866, Перекодирует текстовые файлы из cp866 в Windows-1251 дата 4 февр 2015  <img class="img2" align=right alt=""><br>
+&nbsp;<br>&nbsp;<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y53"></a>53<br>
+обращение к ячейке sg строковой <br>
+label1.caption:=sg1.Cols[0].Strings[0];<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y54"></a>54<br>
+Еще один глюк Delphi. Вместо объекта создается указатель!<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y56"></a>56<br>
+Create !!:-)<br>
+На форму panel1, кнопку<div class="kod">
+implementation<br>
+{$R *.DFM}<br>
+var w: array[1..80,1..80]of Tpanel;    //  Vcl.ExtCtrls<br>
+procedure TForm1.Button1Click(Sender: TObject);<br>
+var x,y : integer;<br>
+begin<br>
+for y:=1 to 70 do<div class="q">
+  for x:=1 to 50 do begin<div class="q">
+     w[x,y]:=TPanel.Create(self);<br>
+     w[x,y].Parent:=self;<br>
+     w[x,y].Top:=10*x;<br>
+     w[x,y].Left:=10*x;<br>
+     w[x,y].Width:=8;<br>
+     w[x,y].Height:=8;</div>
+  end;</div>
+end;</div>
+
+Работает очень медленно и не все квадраты рисует<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y57"></a>57<br>
+4сент02 Экспеременнтирую с установкой новой библиотеки DelphiX<br>
+Распаковал в DelphiX папку, запустил DelphiX\bin\instal_for5.exe<br>
+Пишет установлено complete<br>
+Лезу в Дельфу Ура! Появилась новая библиотека!<br>
+
+7сент02 Пробую сделать чтото MOORHUHN<br>
+За основу попр взять DelphiX\Samples\Sprite\Base "серые шары"<br>
+Имеем 2 вида спрайтов. Нехитрый фон.<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y59"></a>59<br>
+Встронный граф редактор Delphi<br>
+Tool>ImageEditor<br>
+Alt+PrintScreen дает захват в буфер активного окна!<br>
+</div>
+
+
+
+
+
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y69"></a>69<br>
+Каждому компоненту отдельный юнит<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y70"></a>70<br>
+EnableWindow<br>
+Жесткий прикол. Комп перестает реагировать на клаву и мышь!<br>
+OnCreate формы помещаем<div class="kod">
+EnableWindow(GetDesktopWindow(),false);</div>
+
+Кстати при работе в Мирке аналогичный эффект достигается вводом команды <div class="kod">
+/write aux</div>
+
+Как узнать разрешение экрана? Координаты окна?<br>
+screen.width  form1.top<br>
+</div>
+
+
+
+
+
+
+
+<hr>
+<div class="no no3" style="padding-bottom: 1em;">
+<a id="y78"></a>78<br>
+Графика<div class="kod">
+procedure Tform1.FormPaint<br>
+var x,y: integer;<br>
+begin<div class="q">
+x:=-300;<br>
+while x&lt;300 do begin<div class="q">
+y:=round(0.4*x);<br>
+if ((x>-300)and(x&lt;300))and<br>
+((y>-200)and(y&lt;200)) then<div class="q">
+canvas.pixels[300+x,200-y];</div>
+x:=x+1;</div>
+end; {while}</div>
+end;{proc}</div>
+----<br>
+24.03.2017<br>
+b это TBitmap<br>
+b.Transparent:=true<br>
+b.TransparentMode:=tmFixed<br>
+b.TransparentColor:=clRed<br>
+канва img.drdaw(0,0,b)<br>
+- - - <br>
+если TransparentMode:=tmAuto то цвет берется из углового пикселя<br>
+- - -<br>
+FloodFill<br>
+Brush.color:=clwhite ///краска<br>
+FloodFill(1,1,clred,fsSurface);// уничтожить цвет<br>
+FloodFill(1,1,clred,fsBorder);// стоп-цвет<br>
+- - -<br>
+Canvas.draw(0,0,b) где b: tbitmap-есть транспарент<br>
+b.assign(image1.Picture);<br>
+image2.picture.loadfromFile(s); где s имя файла<br>
+image1.canvas.copyMode:=cmSrcCopy;<br>
+image1.canvas.copyRect(rect(0,0,200,200), image2.canvas,rect(0,0,200,200));<br>
+CopyRect(R,bt.canvas,r0) где R,R0: TRect<br>
+bitmap.TransParentColor:=clRed<br>
+BitBlt(b.canvas.handle,0,0,100,100,b.canvas.handle,0,0,SRCCOPY);// куда|откуда<br>
+где DC:HDC;<br>
+DC:=getDC(0);<br>
+b.loadfromfile('c:\v.bmp');<br>
+canvas.handle<br>
+i.picture/bitmap.handle<br>
+после создания bitmap надо дать ему размер<br>
+- - -<br>
+image1.picture.bitmap.assign(image2.picture)<br>
+image1.picture.assign(image2.picture)<br>
+image1.picture.graphic:=b<br>
+Canvas.StretchDraw  + c CopyMode<br>
+вписывает каринку в прямоугольник<br>
+
+cliprect<br>
+- - -<br>
+<table class="t292"><tr><td style="background-image: url(noslash.png);">ЗагрузИз
+</td><td>file</td><td>canvas</td><td>b2</td></tr><tr><td>
+tbitmap </td><td>loadfromfile()</td><td>b.assign(i.picture)</td><td>b2.canvas.draw(0,0,b)</td></tr><tr><td>
+i.canvas</td><td></td><td>i2.canvas.cliprect(rect(0,0,1,1),i.canvas.rect(0,0,2,2))</td><td>i.canvas.draw(0,0,b)</td></tr><tr><td>
+i.picture</td><td>i.picture.loadfromfile</td><td>bitblt(DestDC:HDC; x: integer;y: integer;width: integer; height: integer;SrcDC:HDC; xsrc: integer;ysrc: integer; Rop: Cardinal)</td><td></td></tr></table>
+
+
+
+<!-- Загруз\Из<br>
+file canvas b2<br>
+tbitmap  loadfromfile() b.assign(i.picture)  b2.canvas.draw(0,0,b)<br>
+i.canvas * i2.canvas.cliprect(rect(0,0,1,1),i.canvas.rect(0,0,2,2)) i.canvas.draw(0,0,b)<br>
+i.picture i.picture.loadfromfile bitblt(DestDC:HDC; x: integer;y: integer;width: integer; height: integer;SrcDC:HDC; xsrc: integer;ysrc: integer; Rop: Cardinal)<br> -->
+
+
+</div>
+<hr>
+<div class="no no2">
+<a id="y79"></a>79<br>
+Некоторые свойства в DelphiX<br>
+DXTimer.Framerate - фпс<br>
+DXSpriteEngine.Engine.AllCount - все спрайты integer<br>
+DXSpriteEngine.Engine.DrawCount - сейчас отрисовываются<br>
+удерживание в центре зкрана скроллинг<div class="kod">
+Engine.X:=-x+Engine.Width div 2-width div 2;<br>
+Engine.Y:=-y+Engine.Height div 2-Height div 2;</div>
+DXDraw.Surface.Canvas - канвас<br>
+</div>
+<hr>
+<div class="no no2">
+<a id="y80"></a>80<br>
+вывод fps<div class="kod">
+with DXDraw.Surface.Canvas do<br>
+begin<div class="q">
+brush.style:=bsClear;<br>
+font.color:=clWhite;<br>
+font.size:=12;<br>
+textout(0,0,'FPS:'+inttostr(DXTimer.Framerate));<br>
+release</div>
+end;</div>
+API - Application Programing Interface<br>
+RFC - editor.org<br>
+</div>
+
+
+<hr>
+<div class="no no1">
+<a id="y83"></a>83<br>
+NoScroll<br>
+#K$+<br>
+Текст<br>
+Notepad(txt)Word(rtf)hcrtf(hpj,файл проекта).(hlp)<br>
+# имя темы<br>
+K<br>
+$<br>
++ номер темы<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y84"></a>84<br>
+Перемещение в z-последовательности<br>
+Edit>Bring to Front<br>
+Edit>Send to Back<br>
+Также доступно в пр.щелчке мышью<br>
+Для тех, у кого есть parent<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y85"></a>85<br>
+Нечетность<br>
+odd(x): boolean;<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y87"></a>87<br>
+Owner,Sender,Self,Parent<br>
+tform1.form.create(sender:tobject);<br>
+--owner=TComponent<br>
+--sender=TObject<br>
+--self=TForm1<br>
+--parent=TWinControl<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y88"></a>88<br>
+MASM32<br>
+вызовы api функций. 2 способа<br>
+
+jmp @F<br>
+szDlgTitle db "Minimum MASM",0<br>
+szMsg db "Ajhlku",0<br>
+@@:<div class="kod">
+push MB_OK<br>
+push offset szDlgTitle<br>
+Push offset szMsg<br>
+push 0<br>
+call MessageBox<br>
+push 0<br>
+call ExitProcess</div>
+аналогично<div class="kod">
+invoke MessageBox,0,ADDR szMsg, ADDR szDlgTitle,MB_OK<br>
+invoke ExitProcess,0</div>
+
+</div>
+<hr>
+<div class="no no5">
+<a id="y89"></a>89<br>
+Делфи. Запись в реестр для автостарта проги<div class="kod">
+uses Registry;<br>
+procedure tform1FormCreate<br>
+var reg:tregistry<br>
+begin<div class="q">
+reg:=tregistry.create<br>
+reg.rootkey:=HKEY_LOCAL_MACHINE<br>
+reg.lazywrite:=false;<br>
+reg.openkey('software\microsoft\windows\currentversion\run',false);<br>
+reg.writestring('learn',Application.exename);<br>
+reg.closekey;<br>
+reg.free;</div>
+end;</div>
+Пишет саму себя в реестр в ключ с названием learn. Если для работы проги необходим какой нить файл прога его ненайдет. Юзаю: memo1.lines.loadfromfile(exractfilepath(pplication.exename)+'\'+'dic.txt');<br>
+</div>
+<hr>
+<div class="no no5">
+<a id="y90"></a>90<br>
+Запуск IExplrera и открытие в нем инет страницы<div class="kod">
+uses ShellAPI<br>
+procedure Tform1.buttonClick<br>
+begin<div class="q">
+shellexecute(form1.handle,'open','www.aist.net.ru',0,0,sw_maximize);</div>
+end;</div>
+или:<br>
+WinExec('c:/mine.exe',sw_restore);<br>
+/yandsearch?rpt=  ?text=<br>
+см стр. 150<br>
+-----<br>
+WinExec выключение компа<br>
+2,1,19<br>
+WinExec('shutdown -s',sw_show);<br>
+------<br>
+Запуск прог с помощью Ява скриптов<br>
+Для этого нгеобходим файл в системе wscript.exe. Обычно лежит windows\system32<br>
+Создаю с пощью блокнота файл .js<div class="kod">
+var w=WScript.CreateObject("WScript.Shell");<br>
+w.Run("winmine",1)</div>
+//имя айла, видимое<br>
+Создаю a.bat файл<br>
+wscript %1<br>
+//имя с путем<br>
+Перетаскиваю a.js на a.bat. Запустился сапер!<br>
+По дефолту js зарезервировано за макромедиафлеш<br>
+2017 не смог<br>
+
+</div>
+<hr>
+<div class="no no1">
+<a id="y91"></a>91<br>
+Незакрываемое окно Делфи<br>
+Заставить окно обрабатывать мессагу<div class="kod">
+type <div class="q">tform1=class<br>
+- - <br>
+private<div class="q">
+procedure wmclose(var i: integer); message wm_close;</div>
+- - </div>
+implementation<br>
+procedure tform1.wmclose(var i: integer);<br>
+begin<div class="q">
+showmessage('no');<br>
+exit;<br>
+inherited;</div>
+end;</div>
+см. <a href="#y121">стр 121а</a><br>
+окошко не возможно закрыть:-)<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y93"></a>93<br>
+MSScanDisk<br>
+Код типа ностиеля // быстро<br>
+Таблицы размещения файла<br>
+Структура папок - несколько 10-в минут<br>
+Файловая система - Десять минут<br>
+Скурпулезно проверяет весь диск, на который ей предлагает установиться<br>
+67% - зависла<br>
+Пропуск - работает!<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y94"></a>94<br>
+MS VC++<br>
+Компиляция F7<br>
+Запуск Ctrl+F5<br>
+Различается регистр символов<br>
+<a href="ftp://ftp.aist.net.ru"> ftp://ftp.aist.net.ru</a><br>
+<a href="ftp://ftp.gamecity.avtograd.ru/incoming"> ftp://ftp.gamecity.avtograd.ru/incoming</a><br>
+
+aton=ascii to network<br>
+ntoa=network to ascii<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y95"></a>95<br>
+Убрать из загрузочного меню МЕ выбор 2000<br>
+в файл BOOT.INI<br>
+было:<br>
+timeout=30<br>
+default=mult(0)disk(0)rdisk(0)partition(1)\WINNT<br>
+[OPERATION SYSTEMS]<br>
+multi(0)disk(0)rdisk(0)partition(1)\winnt="MS W2000 Pro" /fastdetect<br>
+C:\"MS WINDOWS"<br>
+Стало:<br>
+timeout=0<br>
+default=C:\<br>
+далее без изменений<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y96"></a>96<br>
+Создание случая<br>
+var v:TRadiobutton<br>
+procedure Form Create<br>
+v:=TRadiobutton.Create(self); // создание<br>
+v.parent:=self// визуализация<br>
+v.free// убить<br>
+----<br>
+Держим min размеры окна<br>
+private<br>
+procedure wm(var x: TWMGetMinMaxInfo); message WM_GETMINMAXINFO<div class="kod">
+
+procedure tform1.wm(var x: TWMGetMinMaxInfo);
+begin<div class="q">
+with x.MinMaxInfo^.ptMinTrackSize do <div class="q">
+begin<div class="q">
+x:=705; y:=410;</div>
+end</div>
+inherited</div>
+end;</div>
+----<br>
+Описание<br>
+36 WM_GETMINMAXINFO 0024<br>
+имя, тип// lparam - (LPMINMAXINFO) lparam<br>
+В свойствах формы можно сделать фиксированный размер<br>
+---с<br>
+TB_GETITEMRECT 1053<br>
+На формуу Toolbar, на него 3 кнопки(BitBtn,SpeedButton,Button)<br>
+uses commctrl<br>
+var r: trect;<br>
+y:=toolbar1.Perform(TB_GETITEMRECT,0,integer(@r))<br>
+если y&lt;0, то функция вернула результат<br>
+Получает rect итема Toolbar<br>
+Описание<br>
+TB_GETITEMRECT<br>
+wParam=(WPARAM) iButton<br>
+lParam=(LPARAM)(LPRECT) lprc// тип, имя<br>
+-----e<br>
+Мессага Виндовс все они пронумерованы, номера в файле message.pas<br>
+sizeof(tmessage)=16<hr>
+кому:4 байт<br>
+...:4<br>
+wp:4<br>
+lp:4<br>
+Источниками мессаг являются события прерывания. Напр: модем, юзер,стучащим по клаве, движения мыши. Принимать мессагу может любой TWinControl. Программно послать мессагу тоже можно<br>
+1)form1.Perform(WM_CLOSE,0,0)<br>
+2)SendMessage(form1.handle,WM_CLOSE,0,0)<br>
+3)PostMessage(form1.handle,WM_CLOSE,0,0)<br>
+Поставить свой обработчик в окне в type<br>
+private<div class="kod">
+procedure m(var i: integer); message WM_CLOSE;<br>
+procedure tform1.m(var i:integer);<br>
+begin end; // хуй закроешь</div><div class="kod">
+procedure tform1.m(var i:integer);<br>
+begin inherited end; // добавил одно слово и закроешь</div>
+
+----f<br>
+Создание своего сообщения в проге<br>
+const wm_hi=wm_user;<br>
+type// первое свободное в системе<br>
+
+private // обьявляю<br>
+procedure k(var i: integer); message wm_hi;<br>
+
+proceure tform1.k(var i: integer);// код<br>
+begin showmessage('приветик!') end;<br>
+
+procedure tform1.formclick(sender:object);// пример юзания<br>
+begin sendmessage(form1.handle,WM_HI,0,0) end;<br>
+----i<br>
+Сообщения Виндовс<br>
+WM_LBUTTONDOWN - мышь<br>
+WM_CLOSE - окно<br>
+TB_GETSTATE - тулбар<br>
+BM_SETSTATE - кнопка<br>
+</div>
+<hr>
+<div class="no no2">
+<a id="y97"></a>97<br>
+Отправляет сообщение(?) кнопке<br>
+Тпа программногго нажатия<br>
+Нажать<br>
+button1.Perform(BM_SETSTATE,1,0)<br>
+Отжать<br>
+button1.Perform(BM_SETSTATE,0,0)<br>
+Проверить<br>
+i:=button1.Perform(BM_GETSTATE,0,0)<br>
+---<br>
+var a: array[0..255] of byte<br>
+y: integer<br>
+
+y:=form1/Perform(WM_GETTEXT,255,integer(@a)) // получаем текст окна<br>
+Получает rect итема Toolbar<br>
+uses commctrl<br>
+var r: trect<br>
+y:=toolbar1.Perform(TB_GETITEMRECT,0,integer(@r))<br>
+
+</div>
+<hr>
+<div class="no no1">
+<a id="y98"></a>98<br>
+Родственные связи окна<div class="kod">
+procedure tform1.timer1timer(sender)<br>
+var p: tpoint; h,j: hwnd;<br>
+t,r: longword;<br>
+begin<div class="q">
+getcursorpos(p);<br>
+h:=windowfrompoint(p);// хендл окна<br>
+flashwindow(h,true);<br>
+j:=getwindowTreadProcessID(h,@r);<br>
+label1.caption:='Ручка окна'+format('%x',[h]);<br>
+label2.caption:='Собственник'+format('%x',[j]);<br>
+label3.caption:='Нитка'+format('%x',[t]);<br>
+label4.caption:='Процесс, Поток'+format('%x',[r]);</div>
+end;</div>
+Окно под курсором начинает мигать. В лейблах отбражается инфа о нем<br>
+//ручка окна под курсором<br>
+OnTimer var p: tpoint<br>
+getcursorpos(p)<br>
+label1.caption:=inttohex(windowfrompoint(p),8)<br>
+-----<br>
+Хендл и класс окна<div class="kod">
+var p:tpoint;<br>
+h: hwnd;// ручка<br>
+b: pchar;// класс<br>
+
+getcursorpos(p)<br>
+h:=windowfrompoint(p)<br>
+memo1.clear<br>
+memo1.lines.add(inttohex(h,8))<br>
+getmem(b,255)<br>
+try<br>
+if getclassname(h,b,255)>0 then memo1.lines.add(b)<br>
+finally<br>
+freemem(b,sizeof(b^));<br>
+end</div>
+</div>
+<hr>
+<div class="no no3">
+<a id="y99"></a>99<br>
+Перебор всех файлов. Поиск файла<div class="kod">
+var sr:TSearchRec;// вся инфа о файле идет сюда<br>
+begin<br>
+if findfirst("c:/*.*",faAnyFile,sr)=0 then begin<br>
+memo1.lines.add(sr.name)<br>
+end;<br>
+while findnext(sr)=0 do begin<br>
+memo1.lines.add(sr.name);<br>
+end;<br>
+findclose(sr);</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y100"></a>100<br>
+Существование директории<div class="kod">
+var s: tsearchrec;<br>
+result:=findfirst(x,faDirectory,s)=0;<br>
+findclose(s);</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y101"></a>101<br>
+Создание файла размером 90 Кб<br>
+Создание файла размером 2 Гб<div class="kod">
+var s: text;<br>
+procedure tform1.formCreate(sender)<br>
+var i: integer;<br>
+begin<br>
+assignfile(s,'bigfile.txt');<br>
+rewrite(s);<br>
+for i:=0 to high(integer) do write(s,'p');<br>
+closefile(s)<br>
+end;<br>
+end;</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y102"></a>102<br>
+Пример описания структуры<div class="kod">
+typedef struct<br>
+{<div class="q">
+	DWORD ckid; // типы<br>
+	DWORD cksize;<br>
+	BYTE ckDATA[cksize]; // тип , массив</div>
+}</div>
+
+--------b<br>
+Вызов закрытых методов<br>
+У тбаттона  есть protected метод CreateWnd. Для вызова<br>
+a:=class(TButton) end;<br>
+где-то в коде<br>
+a(button1).CreateWnd;<br>
+</div>
+<hr>
+<div class="no no4">
+<a id="y103"></a>103<br>
+Выкидываемся из таскбара<br>
+SetWindowLong(Application.Handle,<br>
+GWL_EXSTYLE,<br>
+GETWINDOWLONG(Application.Handle,GWL_EXSTYLE)OR WS_EX_TOOLWINDOW AND NOT WS_EX_APPWINDOW);<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y104"></a>104<br>
+Прячемся в списке процессов<div class="kod">
+type<br>
+T=function(dwProcessID,dwType:DWord): DWORD; stdcall;</div><hr>
+
+<div class="kod">
+var i:T;<br>
+h: hinstance;<br>
+begin<br>
+h:=loadlibrary('KERNEL32.DLL');<br>
+i:=GetProcAddress(h,'RegisterServiceProcess');<br>
+i(GetCurrentProcessID,1);<br>
+freeLibrary(h)<br>
+end;</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y105"></a>105<br>
+Барабан<br>
+var f: procedure(x,y: double);<br>
+@f:=getProcAddress(hDll,'some');<br>
+f(3,4);<hr>
+или так:<br>
+var f: procedure<br>
+@f:=@t;<br>
+f;<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y107"></a>107<br>
+Время<br>
+Эксперименты<br>
+Кинь на форму Edit, в варах обьяви t: tdatetime<br>
+В procedure tform1.formShow<br>
+begin<br>
+edit1.text:=floattostr(date);<br>
+end<br>
+Дает: 37655<br>
+---<br>
+Год: FormatDateTime('YYYY',now)<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y109"></a>109<br>
+Сообщения Windows<br>
+Представляет собой структуру 16 байт?<br>
+кому: 4<br>
+№ мессаги 4<br>
+wParam word 4<br>
+lParam - longint 4<br>
+Получать мессаги может любой потомок класса TWinControl. Получатель идентифицируется handler`ом<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y110"></a>110<br>
+dll для хука (стандартная установка)<div class="kod">
+library dll;<br>
+uses shellapi, sysutils,windows;<br>
+function a(n: integer; w: wparam; l: lparam):lparam; stdcall;// стандартные соглашения<br>
+begin<br>
+result:=l<br>
+end;<br>
+exports<br>
+a;<br>
+end.</div>
+New->dll<br>
+Набить код<br>
+Save Project As... дать имя которое будет у dll<br>
+Project-Build<br>
+*Для юзания dll должна лежать там же, где прога<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y111"></a>111<br>
+Установка hook<div class="kod">
+unit unit1;<br>
+var h: hinst;<br>
+k: TFNHookProc;<br>
+begin<br>
+h:=loadlibrary('dll.dll');// ручка dll<br>
+k:=GetProcAddress(h,'a');// имя функции , far указатель<br>
+SetWindowsHookEx(WH_KEYBOARD,k,h,0)// тип хука<br>
+end</div>
+</div>
+<hr>
+<div class="no no3">
+<a id="y112"></a>112<br>
+Туже dll функцию использую как обычную<br>
+unit unit2;<br>
+обьявление<br>
+function a(n: integer; w: wparam; l: lparam): lparam far; external 'flint';<br>
+использование<br>
+var i: lparam;<br>
+begin<br>
+i:=a(0,0,0)<br>
+end;<br>
+Всегда дает ошибку Accesss Violation<br>
+-----<div class="kod">
+library project<br>
+uses windows,sysutils,classes;<br>
+var d: hhook<br>
+function a(n: integer,w: wparam;l: lparam): lparam; stdcall;<br>
+begin<br>
+result=callnextEx(d,n,w,l)<br>
+end;<br>
+
+procedure hook(x: boolean); export<br>
+begin<br>
+case x of<br>
+true: d=setWindowsHookEx(WH_KEYBOARD,a,hinstance,0);<br>
+false: unHookWindowsHookEx(d)<br>
+end<br>
+end<br>
+exports a, hook;<br>
+end;</div>
+------<br>
+Юзание dll-функции<br>
+procedure a; external 'project2.dll'; // имя либы<br>
+
+begin <br>
+a<br>
+end;<br>
+*****<br>
+в dll<br>
+uses dialogs<br>
+
+procedure a;<br>
+begin<br>
+showmessage('работает!')<br>
+end;<br>
+exports a;<br>
+----e<br>
+Хук без DLL<br>
+Пасет клаву, в мемо1 пишет нажатую клавишу<br>
+var h: hhook;<br>
+хук<br>
+function a(c: integer; w:wparam; l: lparam): longint; stdcall;<br>
+var s: string;<br>
+begin<br>
+s:=chr(w)<br>
+setwindowtext(form1.memo1.handle,pchar(s));<br>
+result:=callnexthookex(h,c,w,l);<br>
+end<br>
+
+установка хука<br>
+h:=setwindowshookEx(WH_KEYBOARD,@a,hinstance,0);<br>
+снятие хука<br>
+if h&lt;>0 then unhookWindowsHookEx(h);<br>
+-----f<br>
+Паскаль. Представление числа в 16-ной форме (HEX)<div class="kod">
+Function hex(x: word): string<br>
+const a: string=('0123456789ABCDEF');<br>
+begin<br>
+if x&lt;256 then<br>
+hex:=a[(x shr 4)and $f+1]+a[x and $f+1]<br>
+else<br>
+	hex:=hex(x shr 4)+a[(x and $f)+1];<br>
+end;</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y113"></a>113<br>
+Отображение 10-чисел как 16-чисел<br>
+label1.caption:=inttohex(h,4)// число, колво hex знаков<br>
+а обратно? строка -> число<br>
+S:='$cc';<br>
+i:=strtoint(s);<br>
+кстати   (2016)<br>
+i: integer;<br>
+i:=$;// аналогично i:=0<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y114"></a>114<br>
+Открытие пароля под звездочками<br>
+! работает только в dll<br>
+Напритмер на таймере такой код<br>
+getcursorpos(p)<br>
+h:=windowfrompoint(p);<br>
+SendMessage(h,EM_SETPASSWORDCHAR,0,0);<br>
+где h:=hwnd; p: tpoint<br>
+Видно будет при перерисовке окна<br>
+InvalidateRect(h,nil,true)<br>
+Фленов Библия Дельфи Хакера глава 3<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y115"></a>115<br>
+Печать hwnd в label.caption<br>
+label1.caption:='h:'+inttostr(h,4)<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y116"></a>116<br>
+Установка фокуса<br>
+button1.Setfocus-установка<br>
+button1.focused - проверка фокуса<br>
+ActiveControl:=nil<br>
+ActiveControl:=button1<br>
+OnEnter - событие получения фокуса<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y117"></a>117<br>
+Переводит константу в число<br>
+map &lt;string, double><br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y118"></a>118<br>
+множество Фонт Синтаксис<br>
+толстый подчеркнутый<br>
+button1.font.style:=[fsBold]+[fsUnderline];<br>
+font.style:=font.style-[fsBold];<br>
+---<br>
+procedure tform1.FormKeydown(sender....)<br>
+if ssleft in shift then<br>
+
+type p:=record k,s: integer end<br>
+var a: array[1..2] of p=((k:0;s:0),(k:0;s:0));<br>
+2016<br>
+font.style:=[fsBold,fsUnderline]<br>
+2019 CSS<br>
+text-decoration: underline;/*подчеркнутый*/<br>
+font-weight: bold;/*жирный*/
+</div>
+<hr>
+<div class="no no1">
+<a id="y119"></a>119<br>
+Тремор курсора мыши<br>
+в таймере<div class="kod">
+var p: tpoint<br>
+begin<div class="q">
+randomize;<br>
+getcursorpos(p);<br>
+setcursorpos(p.x+2-random(5),p.y+2-random(5))</div>
+end;</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y120"></a>120<br>
+округление real<br>
+В 3d графе часто юзаются cos и др. sin<br>
+при этом cos(pi/2)=6.230E-17 (не 0)<br>
+Для округления до нуля юзаю функцию<br>
+function tform.okrug(r: real): real;<br>
+var f: real;<br>
+begin<br>
+f:=int(Exp(4*ln(10)));// округляет до четырех знаков<br>
+result:=round(f*r)/f;<br>
+end;<br>
+юзание<br>
+b:=okrug(cos(p/2))<br>
+<div class="kod">
+function okrug100(r:  single): single;<br>
+begin<div class="q">
+result:=100*r/100</div>
+end;</div>
+</div>
+<hr>
+<div class="no no4">
+<a id="y121"></a>121<br>
+Градусы в радианы<br>
+deg:=rad*180/pi<br>
+rad:=deg/180*pi<br>
+в модуле math есть также<br>
+RadToDeg<br>
+DegToRad<br>
+---------а<br>
+обработчик мессаги<br>
+в обьявлении формы<br>
+в классе public<br>
+procedure u(var x: tmessage);<br>
+message WM_KEYDOWN;<br>
+В implementation<div class="kod">
+procedure tform1.u(var x: tmessage);<br>
+begin<br>
+close<br>
+end</div>
+Результат: При нажати любой клавиши закрывается прога<br>
+WM_CLICK - НЕТ такого, зато есть UP, DOWN, CLOSE<br>
+(WM_BUTTONDBLCLK)<br>
+см <a href="#y121d">стр 121-d</a><br>
+см <a href="#y91">стр 91</a><br>
+-------------<br>
+обработчик мессаги 2017(пришлось наследовать)<br>
+в классе новом кнопочном<br>
+tfo=class(tbutton)<br>
+procedure wmd(var msg: twmmouse) message WM_LBUTTONDOWN;<br>
+end;<br>
+var b: tfo;<br>
+implementation<br>
+procedure tfo.wmd(var msg: twmmouse);<br>
+begin<br>
+messageDlg('Да',mtinformation,[mbOK],0)<br>
+end;<br>
+в create формы<div class="kod">
+d:=tfo.create(form1);<br>
+with b do<br>
+begin<br>
+parent:=form1;<br>
+width:=30;height:=40;<br>
+top:=50; left:=10;<br>
+caption:='B';<br>
+end</div>
+В дестрой формы<div class="kod">
+b.free</div>
+Дает сообщение по нажатии кнопки<br>
+----------------с<br>
+Borland\Delphi\Source\Rtl\Win\messages.pas<br>
+строка 907 описание записи<div class="kod">
+TWMMouse=packed record<br>
+Msg: Cardinal;<br>
+keys: longint;<br>
+case integer of<br>
+0:(<br>
+xpos: smallint;<br>
+ypos: smallint);<br>
+1:(<br>
+pos: Tsmallpoint;<br>
+result: longint);<br>
+end;</div>
+<a id="y121d">-----------------d</a><br>
+обработчик мессаги 2017(закрытие окна по двойному щелчку)<br>
+в классе формы<div class="kod">
+public<br>
+procedure m(var x: TWMMouse); message WM_LBUTTONDBLCLK;</div>
+в имплементации<div class="kod">
+procedure tform1.m(var x:TWMMouse)<br>
+begin<div class="q">
+close</div>
+end;</div>
+--------------e<br>
+обработчик мессаги<br>
+маус мув и маус даун, вывод на лейбл<br>
+в паблик формы:<br>
+procedure m(var x:TWMMouse); message WM_MOUSEMOVE;<br>
+procedure k(var x:TWMMouse); message WM_LBUTTONDOWN;<br>
+в имплементации<div class="kod">
+procedure tform1.m();<br>
+begin<br>
+label1.caption:=format('%d %d',[x.xpos,x.ypos]);<br>
+end;</div>
+
+procedure tform1.k();<br>
+begin<br>
+label2.caption:=format('%d %d',[x.xpos,x.ypos]);<br>
+end;<br>
+вызов так<br>
+form1.perform(WM_MOUSEMOVE,0,makeLparam(3,3));//x,y<br>
+----------------f<br>
+обработчик мессаги 2017<br>
+Двойной щелчек передается как маусдаун кнопке<br>
+класс кнопки<br>
+type tfo=class(tbutton)<br>
+procedure f(var x: TWMLBUTTONDBLCLK);<br>
+message WM_LBUTTONDBLCLK;<br>
+end;<br>
+в implementation<div class="kod">
+procedure tfo.f(var x: TWMLBUTTONDBLCLK)<br>
+begin<br>
+perform(WM_LBUTTONDOWN,x.key,longint(x.pos));<br>
+end;</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y122"></a>122<br>
+Смена обработчика на лету<br>
+В обьбявлении формы<div class="kod">
+public<br>
+procedure u(sender: tobject)</div>
+в имплементации<div class="kod">
+procedure tform1.u;<br>
+begin<br>
+close<br>
+end;</div>
+где-то в коде...<div class="kod">
+button1.onClick:=u;</div>
+Результат. При нажатии баттон1 вызывается процедура u<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y123"></a>123<br>
+Форма с кнопкой, создается разработкой<br>
+форма-2 с кнопкой делается программно<br>
+
+закрыть форму-2<br>
+
+OnClick - создать форму-2 с кнопкой. Показать модально<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y124"></a>124<br>
+DLL<div class="kod">
+library mydll;<br>
+uses SysUtils, Classes;<br>
+function a1: int64;<br>
+begin<br>
+result:=5412l;<br>
+end;<br>
+
+function a2: int64;<br>
+begin<br>
+result:=9890;<br>
+end;<br>
+
+exports<br>
+a1,a2;<br>
+end.</div>
+
+file-new-dll<br>
+Save Project As... mydll<br>
+Proect-Build mydll<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y125"></a>125<br>
+Юзание DLL<br>
+function a1: int64; stdcall; extend 'MyDll'<br>
+var form1: tform1;<br>
+implementation<div class="kod">
+procedure TForm1FormCreate(sender)<br>
+begin<br>
+form1.caption:=inttostr(a1)+''+inttostr(a2);<br>
+end</div>
+DLL которую можно регить называется COM-сервер. <a href="#y146">подробнее см стр 146</a><br>
+</div>
+<hr>
+<div class="no no4">
+<a id="y126"></a>126<br>
+Ресурс BMP<br>
+Кладу файл brcc32.exe в корне диска c: делаю файл mywave.rc<div class="kod">
+mywave2 BITMAP LOADONCALL prev.bmp</div>
+Компилю его перетащив на brcc32.exe. Получается mywave.res<br>
+В проект добавляю строку<br>
+{$R mywave.RES}<br>
+Загрузки в имедж картинки<br>
+image1.picture.bitmap.loadfromResourceName(hInstance,'mywave2');<br>
+аналог getModuleHandle<br>
+-------в<br>
+TControl(Sender).tag:=0<br>
+TWinControl<br>
+form1.ControlCount колво контролов<br>
+TEdit(form1.Controls[i]).text<br>
+if (Sender is TEdit) then<br>
+tag:=longint(form1.Controls[i]) поинтер засунул в тег<br>
+TCheckBox(ptr(TMenuItem(Sender).tag)).Checked юзание этого поинтера pointer<br>
+(Sender as TImage).tag:=0<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y127"></a>127<br>
+Обращение к компонентам через индекс<br>
+Присваивает значение всем лейблам<br>
+for i:=1 to 5 do<br>
+TLabel(FindComponent('label'+inttostr(i))).caption:="1";<br>
+
+for i:=1 to 5 do<br>
+(FindComponent(Format('label%d',[i]))as TLabel).caption:="1";<br>
+
+TLabel(label1).Caption:="1"// обращение через имя<br>
+for i:=0 to ControlCount-1 do<br>
+if Controls[i].className:='TLabel' then TLabel(Controls[i]).Caption:=x; //(через classname)<br>
+</div>
+<hr>
+<div class="no no5">
+<a id="y128"></a>128<br>
+Спикер (вкл\выкл)<br>
+способ1<div class="kod">
+SystemParametrsInfo(SPI_SETBEEP,0,nil,SPIF_UPDATEINFILE);</div>
+0-выключить, 1-включить<br>
+---способ 2<br>
+В диспетчере устройств<br>
+вид->показать скрытые устройства-><br>
+Драйверы устройств не Plug&Play->Beep<br>
+отключить!<br>
+</div>
+
+
+<hr>
+<div class="no no4">
+<a id="y131"></a>131<br>
+
+Глюк. Прокрутка memo<br>
+При добавлении многих строк в memo чтобы она не прокручивалась вниз, а показывало начало текста.<div class="kod">
+memo1.SelStart:=0;<br>
+SendMessage(memo1.handle,EM_SCROLLCARET,0,0);//Из за ошибки в коде Delphi придется добавить эту строку</div>
+<br>
+Ввод в позицию курсора<br>
+SendMessage(memo1.handle,EM_REPLACESEL,0,longint(PChar(inttostr(i)))</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y132"></a>132<br>
+Простейшая БД(пример)<br>
+На форму из DataAccess:<br>
+DataSource, Table<br>
+из DataControl: DBGrid<br>
+
+DataSource1.DataSet:=Table1<br>
+Table1.DataBaseName:=DBDEMOS<br>
+Table1.TableName:=animals.dbf<br>
+Table1.Active:=true<br>
+DBGrid1.DataSource=DataSource1<br>
+---<br>
+Теперь можно визуализировать все поля, если хочешь. Дабл клик на Table1. Райтклик на открывшемся окне >Add all fields. Выделяй<br>
+понравившиеся поля и тащи на форму<br>
+всё!<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y133"></a>133<br>
+Alias(базы данных)<br>
+Свойство Table.DataBaseName является псевдонимом. Он указывает проге, где искать бд. Чтобы указать на свою бд.<br>
+Панель управления->BDE Administrator<br>
+Во вкладке DataBases создаешь новую Aliasу. Имя драйвера standard (Подходит для таблиц Paradox, dBase, FoxPro txt)<br>
+Потом в Definition свежесозданного элиаса указываешь драйвер, например Paradox, и путь к твоей базе<br>
+--<br>
+Теперь этот элиас будет виден в Дельфи<br>
+</div>
+<hr>
+<div class="no no4">
+<a id="y134"></a>134<br>
+Открытие CDROM`а<br>
+uses mmsystem<div class="kod">
+mciSendString('set cdaudio door open wait',nil,0,handle);</div>
+закрытие<div class="kod">
+mciSendString('set cdaudio door closed wait',nil,0,handle)</div>
+</div>
+<hr>
+<div class="no no3">
+<a id="y135"></a>135<br>
+Папка откуда прога запускается<br>
+s:=Application.ExeName<br>
+или тоже самое<br>
+s:=ParamStr(0)<br>
+Дальше остается извлечь папку, отсечь имя файла<br>
+while pos('\',s)>0 do<br>
+s:=copy(s,1+pos('\',s),length(s)-pos('\',s))// способ 1<br>
+
+for i:=length(s) downto 1 do<br>
+if s(i)&lt;>'\' then<br>
+setlength(s), length(s)-1)<br>
+else break; // способ 2<br>
+
+s:=ExtractFilePath(paramstr(0))// со слешем способ 3<br>
+s:=ExtractFileDir(paramstr(0))//без слеша в концеб способ 4<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y136"></a>136<br>
+GUID <br>
+генерация - Ctrl+Shift+G<br>
+функция - CoCreate Guid<br>
+в строку - GUIDTosTRING //uses Sysutils<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y137"></a>137<br>
+Игра MID файла<br>
+uses MMSystem<br>
+
+procedure TForm1.ButtonClick(sender: TObject<br>
+var m1: MCI_OPEN_PARMS<br>
+m2: MCI_PLAY_PARMS<br>
+did: word<br>
+flags: word<br>
+begin<br>
+m1.lpstrDeviceType:='sequencer';<br>
+m1.lpstrElementNames:='taxi.mid'<br>
+flags:=MCI_OPEN_ELEMENT OR MCI_OPEN_TYPE<br>
+MciSendcommand(0,MCI_OPEN,flags,longInt(@m1)<br>
+did:=m1.wDeviceId;<br>
+m2.dwFrom:=0;<br>
+flags:=MCI_FROM OR MCI_WAIT;<br>
+MciSendCommand(did,MCI_PLAY,flags,LongInt(@m2))<br>
+MciSendCommand(did,MCI_CLOSE,0,LongInt(nil))<br>
+end;<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y138"></a>138<br>
+INI файлы<br>
+uses inifiles<br>
+Хранят параметры<div class="kod">
+s:=extractfilePath(Application.exename)<br>
+
+procedure TForm1.FormDestroy // сохранить<br>
+var f: Tinifile;<br>
+begin<br>
+f:=Tinifile.Create(s+'set.ini');<br>
+try<br>
+f.writeInteger('score','a',a);<br>
+секция, имя параметра, значение<br>
+finally<br>
+f.free;<br>
+end<br>
+end;</div>&nbsp;
+<div class="kod">
+procedure TForm1.FormCreate// чтение<br>
+var f: Tinifile; i: integer;<br>
+begin<br>
+f:=Tinifile.Create(s+'set.ini');// попытка читать ини файл<br>
+i:=f.Readinteger('score','a',high(integer));<br>
+if i&lt;>high(integer) then<br>
+a:=f.Readinteger('score',a',a)//если удалось<br>
+else<br>
+	a:=1// если не удалось<br>
+end;</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y139"></a>139<br>
+TActionList<br>
+На форму Standart\ActionList и три батона<br>
+Двойной щелчек на TActionList<br>
+NewAction - создастся действие<br>
+Action1.Name=a<br>
+Лезем в Events действия a<br>
+On Execute<br>
+Showmessage('i')<br>
+Button1.Action:=a<br>
+Button2.Action:=a<br>
+Button3.OnClick;<br>
+a.Enabled:=not a.Enabled<br>
+Нажатие батонов 1,2 дает сообщение (i)<br>
+Нажатие батона3 делает доступными батоны 1,2<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y140"></a>140<br>
+DDE сервер<br>
+На форму Edit, System\DDEServerConv, System\DDEServerItem<br>
+TDDEServerItem.Name:='c'<br>
+.text:='некий текст';<br>
+c.text:=edit1.text<br>
+сохраняю проект как a.dpr, компилю<br>
+глюк- если заполнить свойство DDEServeritem.ServConv, то ниче не будет работать <br>
+a.exe  - сервак<br>
+Технология DDE это развитие технологии сообщений Винды. Прнцип работы не ясен.<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y141"></a>141<br>
+DDE клиент<br>
+На форму лейбл, System\DDEClientConv, System\DDEClientitem<br>
+DDEClientConv1.DDESevice:=a;// икзешник сервера<br>
+.DDETopic:=b;// заголовок формы сервака<br>
+.ConnectMode:=ddeAutomatic<br>
+DDEClientItem1.DDEConv:=DDEClientConv1<br>
+DDEClientItem1.onChange<br>
+Label1.caption:=DDEClientItem1.text<br>
+
+TForm1.FormCreate<br>
+DDEClientitem1.DDEitem:='c' // имя сервер итема<br>
+Запускать после сервера, а то клиент не найдет сервера<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y142"></a>142<br>
+OLE<br>
+позволяет редактировать word-документы из самодельной проги<br>
+На форму OleContainer,menu,saveDialog<br>
+в меню пункты: новый, сохранить, закр.<div class="kod">
+OleContainer1.Align:=alClient;</div>
+код в меню\новый<div class="kod">
+OleContainer1.InserrtObjectDialog;</div>
+меню\сохр<div class="kod">
+if not Savedialog1.Execute then exit;<br>
+OleContainer1.SaveAsDocument(savedialog1.filename);</div>
+меню\закрыть<div class="kod">
+OleContainer1.DestroyObject;</div>
+Запустить прогу.<br>
+Меню\Новый\Из файла. Выбрать .doc. Откроется документ Word. Двойной щелчек на OlE и откроется Word. Вносим изменения, сохранить, меню\Закрыть<br>
+<hr>
+OLE<br>
+Самый простой пример!<br>
+На форму OleContainer<br>
+Двойной щелчек на нем, создать новый-точечный рисунок<br>
+Запускаю прогу<br>
+Двойной щелчек на OLE<br>
+Можно рисовать!<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y143"></a>143<br>
+OLE автомат / программное создание документа Word<br>
+uses comObj<br>
+На форму Edit, Button, Memo<div class="kod">
+Memo.lines=Приглашаем вас в воскресенье на день рождения<br>
+Button.onclick<br>
+var w: variant; i: integer;<br>
+w:=CreateOleObject('Word.Basic');// Запуск сервера word<br>
+w.AppShow;// показать<br>
+w.FileNew;// нов. файл<br>
+w.Insert(edit1.text+#13);//добавление строк<br>
+for i:=0 to memo1.lines.count do<br>
+w.insert(memo1.lines[i]+#13)<br>
+w.FileSave;// сохранение<br>
+w.DocClose(2);// закрытие</div>
+В edit ввожу имя, жму кнопку, запускается Word, сохраняю документ!<br>
+</div>
+<hr>
+<div class="no no6">
+<a id="y144"></a>144<br>
+.reg<br>
+Добавление инфы в реестр<br>
+Создаем текстовый файл с расширением .reg<div class="kod">
+REGEDIT4<br>
+[HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]<br>
+"Start Page"="about:_blank"</div>
+При запуске этого файла меняет стартовую страницу IE на пустую<br>
+! в имени ключа не делай перенос строки<br>
+Скрыть ресурсы пример<div class="kod">
+REGEDIT4<br>
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\LanmanServer\Parameters]<br>
+"AutoShareWks"=dword:00000000<br>
+"key"=hex: 00,00,00<br>
+"key2"="sdfs"</div>
+</div>
+
+
+
+<hr>
+<div class="no no1">
+<a id="y148"></a>148<br>
+HTML<br>
+Выровнять по левому и правому краю, в пределах одной строки<br>
+Новости (по левому) 2014(по правому)<div class="kod" style="position:relative;" id="cu148v1">
+&lt;div style="display: inline;"&gt;<br>
+Новости<br>
+&lt;/div&gt;<br>
+&lt;div style="float: right;"&gt;<br>
+2014<br>
+&lt;/div&gt;<div class="mara" onclick="cpy(cu148v1);"></div></div>
+Равнение по краям<br>
+
+<hr>
+лекарство от переноса<br>
+1март2015<br>
+чтобы браузер не разрывал при переносе на др. строку слово С++ заключи его в программные скобки<br>
+<div class="kod" style="position:relative;" id="cu148v2">
+&lt;span style='white-space: nowrap;'&gt;C++&lt;/span&gt;
+<div class="mara" onclick="cpy(cu148v2);"></div>
+</div>
+Есть еще юникод символ неразрывный пробел $A0<br>
+AndrewE13</div>
+
+<hr>
+<div class="no no1">
+<a id="y149"></a>149<br>
+ApplicationEvent<br>
+Чтобы подсказка вылазила в лейбле статус баре, а не на компоненте.<br>
+На форму label, button,ApplicationEvents<br>
+button.hint:='Это офигенная подсказка'<br>
+button.showHint:=false; // чтобы не вылазило на кнопке<br>
+ApplicationEvent.onHint;<br>
+
+Label1.caption:=application.Hint;<br>
+applicationEvents1.cancelDispatch; // нах эта строка?<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y150"></a>150<br>
+Web Browser<br>
+На форму Internet\WebBrowser<br>
+Form1.OnCreate<div class="kod">
+WebBrowser1.Navigate('http://10.64.0.1/forums/');</div>
+WebBrowser - это COM объект<br>
+</div>
+<hr>
+<div class="no no3">
+<a id="y151"></a>151<br>
+Не работала мирка и частично Nassi был ip:10.64.2.108 маска 255.255.0.0<br>
+я сменил ip=10.64.0.108<br>
+маска=255.255.255.0<br>
+Потом ввел команду<br>
+route add 10.10.11.0 mask 255.255.255.0 10.64.0.254-p<br>
+
+route add 10.64.1.0 mask 255.255.255.0 10.64.0.254-p<br>
+всё заработало!<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y152"></a>152<br>
+Компиляция MASM32<br>
+Лезешь в masm32/example справляешь исходник как тебе надо и жмешь makeit.bat<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y153"></a>153<br>
+DEBUG<br>
+(в xp есть, в w8.1 нету)<br>
+Для отладки небольших прог на Ассемблере, можно юзать debug.exe<br>
+quit - выход<br>
+debug - запускает прогу<br>
+a 100 - можешь вводить код<br>
+ввод пустой команды означает конец кода<br>
+например<br>
+-a 100<br>
+0b6a: 100 mov cx,1<br>
+ob6a: 103 loop 103<br>
+0b6a: 105<br>
+u - дизассемблер<br>
+t=100 - трассировка с указанного адреса<br>
+t - продолжение трассировка<br>
+не понимает mov sx<br>
+d ffe4 - просмотр памяти ввиде байтов<br>
+
+</div>
+<hr>
+<div class="no no1">
+<a id="y154"></a>154<br>
+ASM, Delphi<br>
+7.4.2018<br>
+арктангенс<div class="kod" style="position:relative;" id="cu154v1">
+function foo(const y,x: extended): Extended;<br>
+asm<br>
+FLD y<br>
+FLD x<br>
+FPATAN<br>
+FWAIT<br>
+end;<div class="mara" onclick="cpy(cu154v1);"></div></div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y155"></a>155<br>
+Добавить в начало строк txt цифру трехзначную (001..120)<br>
+Создаю форму. На нее memo1 свойство wordwrap=false<br>
+код:<br>
+<div class="kod">
+memo1.lines.loadfromFile('120.txt');<br>
+for i:=0 to memo1.lines.count do<br>
+begin<br>
+s:='';<br>
+for j:=1 to 3-length(inntostr(i+1)) do s:=s+'0';<br>
+memo1.lines.strings[i]:=s+inttostr(i+1)+' '+memo1.lines.strings[i];<br>
+end;<br>
+memo1.lines.SaveToFile('120.txt');<br>
+</div>
+format('%.3d',[i])<br>
+------------------а<br>
+Переделать расширерние всех файлов в .avi<br>
+Создаю батник<br>
+<div class="kod">
+ren *.cmk *.avi</div>
+Запускаю его. Готово!<br>
+Длина имени остается прежней<br>
+------------------b<br>
+[fsBold]<br>
+почему W8.1  не ругается Omega<br>
+type f=set of (x3,x2)<br>
+
+b=tbitmap.create<br>
+или b.create<br>
+
+Mkdir создать директорию<br>
+------------------c<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y157"></a>157<br>
+fotoshop<br>
+Контуры, добавить контур<br>
+<img src="pero.png" alt=""> карандаш, ставить точки<br>
+добавить контур <img src="new.png" alt=""><br>
+рисование кривой <img src="pero.png" alt=""><br>
+
+замыкание кривой<br>
+навести на точку (курсор примет вид <img src="cur0.png" alt="" width=20 height=20>)<br>
+потащить, (будет нарисован ус)<br>
+навести на точку (курсор примет вид <img src="cur1.png" alt="" width=20 height=20>)<br>
+отпустить мышь<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y159"></a>159<br>
+Прога сворачивающая все окна<br>
+Создать файл .scf и туда написать<br>
+<div class="kod">
+[Shell]<br>
+Command=2<br>
+[Taskbar]<br>
+Command=ToggleDesktop</div>
+Также есть проги для открытия каналов и для explorer`a:<br>
+<div class="kod"><p>
+[Shell]<br>
+Command=2<br>
+IconFile=Explorer.exe,1<br>
+[Taskbar]<br>
+Command=Explorer</p></div>
+<hr>
+<div class="kod">
+[Shell]<br>
+Command=3<br>
+IconFile=shdocvw.dll,-118<br>
+[IE]<br>
+Command=Channels</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y160"></a>160<br>
+Простейший Thread<br>
+type<br>
+type a=class(TThread)<br>
+protected<br>
+procedure Execute; override;<br>
+private<br>
+end;<br>
+
+Var<br>
+b:a;<br>
+i: integer=0;<br>
+
+procedure a.Execute;<br>
+begin<br>
+inc(i);<br>
+form1.button1.caption:=inttostr(i);<br>
+terminate // убить нить<br>
+end;<br>
+
+Button1Click<br>
+b:=a.Create(false); // сразу стартовать<br>
+
+</div>
+<hr>
+<div class="no no1">
+<a id="y161"></a>161<br>
+Свой курсор - меч<br>
+onForm1.Create<div class="kod">
+image1.cursor:=crNone; // скрыть курсор<br>
+c:=TBitmap.Create();<br>
+c.LoadFromFile('curs.bmp');<br>
+c.Transparent:=true; // Транспарент<br>
+c.Transparent:=clred;<br>
+vw;</div>
+
+onImage1MouseMove<div class="kod">
+vw;<br>
+image.canvas.draw(x,y,c) // рисую курсор</div>
+
+tform1.vw;<div class="kod">
+with image1.canvas do begin<br>
+pen.color:=clWhite;// чистка канвы<br>
+brush.color:=clWhite;<br>
+rectangle(0,0,image1.width,image1.height);// cliprect</div>
+Иногда надо для перерисовки<br>
+mouse.cursorPos:=mouseCursorPos;<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y162"></a>162<br>
+Автозавершение слов в Notepad++<br>
+20.7.2019<br>
+Опции->Настройки->Автозавршение->Включить при каждом вводе<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y163"></a>163<br>
+Способы получить имя класса окна. КЛАСС<br>
+h: hWnd;<br>
+h:=hinstance;<br>
+1.b:PChar<br>
+getMem(b,255);<br>
+try<br>
+getClassName(h,b,255)<br>
+finally<br>
+freeMem(b,sizeof(b^));<br>
+2.<br>
+s: string;<br>
+setlength(s,255);<br>
+getClassName(h,@s[1],255);<br>
+3.<br>
+s: string;<br>
+setlength(s,255);<br>
+getClassName(h,pchar(s),255);<br>
+4.<br>
+a: array [0..255] of char;<br>
+getClassName(h,@a,255);<br>
+
+имя класса чувствительно к регистру<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y164"></a>164<br>
+КЛАСС<div class="kod">
+procedure TForm1.f(sender:TObject; Button: TMouseButton; Shift: TShiftState; x,y: integer)<br>
+begin<br>
+if sender.ClassName='TPanel' then begin ... end;<br>
+if sender.ClassName='TInteger' then begin ... end;<br>
+end;</div>
+регистр важен!<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y165"></a>165<br>
+Иерархия классов CLASS<br>
+16янв2013<br>
+c: TClass<br>
+<div class="kod">
+c:=Tstringgrid;<br>
+while c&lt;>nil do begin<div class="q">
+memo1.lines.add(c.ClassName);<br>
+c:=c.ClassParent;</div>
+end</div>
+</div>
+<hr>
+<div class="no no1">
+<a id="y166"></a>166<br>
+if sender is TPanel then ...<br>
+тоже самое что<br>
+if sender.className='TPanel' then ...<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y167"></a>167<br>
+Простейший секундомер<div class="kod">
+a: TDateTime;</div>
+FormCreate<div class="kod">
+a:=now;</div>
+Timer1Timer<div class="kod">
+label1.Caption:=TimeToStr(now-a)</div>
+
+buttonClick<div class="kod">
+a:=now;<br>
+timer1timer(self)</div>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y169"></a>169<br>
+Галерея в Joomla<br>
+Ставлю компонент<br>
+Админ->Расширен->79/уст->Обзор Morteo<br>
+Ставлю плагин<br>
+Админ->Расширения->уст/уд->Обзор<br>
+Создаю<br>
+Компоненты->Morfeo->Galler->Создать<br>
+Расширения->Менедж.плагинов->Включить Morfeo<br>
+Добавляю фотки, предварительно залить джипеги и гифы в <br>
+components\com_morfeoshow\myphoto<br>
+руссие буквы не допустимы<br>
+компонент->Morfeo->Galler->Загрузить<br>
+по одной или кучей<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y171"></a>171<br>
+php<br>
+Установи AppServ<br>
+Странички хранятся C:\AppServ\www<br>
+Введи в браузере http://localhost/<br>
+Ты увидишь страничку index.php<br>
+&lt;?php phpinfo(); ?&gt;<br>
+вывод инфы о сервере php<br>
+&lt;?php print "&lt;body&gt;&lt;h1&gt;Привет!&lt;/h1&gt;&lt;/body&gt;" ?&gt;<br>
+Вводит Привет!<br>
+php - не поддерживает gif формат!!!<br>
+</div>
+
+
+
+
+
+
+
+<hr>
+<div class="no no4">
+<a id="y179"></a>179<br>
+Snapshop (снимок)<div class="kod">
+uses tlhelp32;</div>
+ .<div class="kod">
+var h: THandle;<br>
+f: TProcessEntry32;</div>
+ .<div class="kod">
+procedure RForm1.Create<br>
+begin<br>
+h:=CreateToolhelp32SnapShot(TH32CS_SNAPPROCESS,0);// только процессы    текущий процесс<br>
+memo1.lines.add('handl snap'+inttohex(h,8));<br>
+f.dwSize:=sizeof(f); // важно<br>
+if process32first(h,f) then<br>
+memo1.lines.add(lowerCase(f.szExeFile))<br>
+while process32Next(h,f) do begin<br>
+memo1.lines.add(lowerCase(f.szExeFile))<br>
+end;<br>
+CloseHandle(h);<br>
+end;</div>
+f: размер структуры, колво ссылок на процесс, pid, id кучи процесса, id модуля, колво нитей, родительский id, базовый приоритет thread`ов, имя файла<br>
+
+
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y181"></a>181<br>
+Два Thread`a<br>
+Делают суммирование, а потом считают каждый внес вклад.<div class="kod">
+type a=class(TThread)<br>
+x: integer;<br>
+protected<br>
+procedure Execute; override;<br>
+private<br>
+end</div>
+
+объявление<div class="kod">
+b: array[0..1] of a;</div>
+
+a.Execute:<div class="kod">
+var k: integer;<br>
+begin <br>
+repeat<br>
+k:=random(s);<br>
+inc(x,k);<br>
+inc(i,k);<br>
+until i>1000</div>
+
+on ButtonClick:<div class="kod">
+Randomize;<br>
+i:=0;<br>
+for k:=0 to 1 do begin<br>
+b[k]:=a.create(false);<br>
+b[k].x:=0;<br>
+end</div>
+</div>
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y186"></a>186<br>
+Полезные команды XP<br>
+regedit - редактор реестра<br>
+dxdiag - диагностика DirectX<br>
+msconfig - настройки системы<br>
+services.msc - службы<br>
+gpedit.msc - групповуха<br>
+nslookup - из адреса ip<br>
+ipconfig - айпи<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y187"></a>187<br>
+Как определит наличие утечки памяти?<br>
+
+&lt;бюст&gt; ReportMemoryLeakOnShutdown:=true<br>
+ставить при загрузке главн формы<br>
+&lt;Amidamary&gt;FastMM<br>
+&lt;SmiSoft&gt; MemProof. последнюю версию, предыдущие глючат.<br>
+</div>
+
+
+
+<hr>
+<div class="no no1">
+<a id="y191"></a>191<br>
+глюк дельфи арккосинус отрицательного числа<br>
+2017<br>
+модуль math ( arcsin - нормуль<br>
+arccos(x), где x [-1..1]<br>
+При отрицательных x вывывает ошибку EInvalidOP<br>
+Invalid floating point opertion<br>
+для борьбы с этим<br>
+arccos(-x)=pi-arccos(a)<div class="kod">
+
+function h: single<br>
+var h: single<br>
+begin<br>
+if abs(g)>1 then g:=-1.0;<br>
+if g&lt;0 then<br>
+h:=pi-arccos(-g)<br>
+else<br>
+h:=arccos(g)<br>
+end</div>
+</div>
+
+
+<hr>
+<div class="no no1">
+<a id="y194"></a>194<br>
+
+------------------c<br>
+inflate<br>
+26.05.2019<div class="kod">
+inflaterect(rect,x,y: integer)</div>
+Прибавляет x к левому и правому концам, а y - к верхнему и нижнему концам прямоугольника<br>
+inflate(r,50,50)<br>
+Т.е. увеличивает прямоугольник<br>
+Windows.DrawFocusRect<br>
+Выполняет операцию XOR для рисования прям-ка со стилем фокуса<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y231"></a>231<br>
+Justify у label (глюк)<br>
+Почему в рантайме не работает justify у лейбел?<br>
+
+Потому что при запуске, размер лейбл устанавливается в размер капшена.<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y232"></a>232<br>
+Отключить клаву<div class="kod">
+rundll32 keyboard, disable</div>
+На батник лает KAV: вирус Hoax.BAT.NoKlav.a<br>
+Ошибка при загрузке keyboard не найден модуль<br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y247"></a>247<br>
+Глюк.<br>
+Максимализация окна на котором лежит image Размер отрисованной части ограничен первоначальной формой<br>
+Пример:<br>
+OnCreate<br>
+form1.width:=100<br>
+form1.image1=...<br>
+
+OnResize<div class="kod">
+image1.width:=form1.width;<br>
+image.canvas.<br>
+brush.color:=clred;<br>
+rectangle(0,0,image.width,image.height)</div>
+
+Включаю. Делаю maximiz формы. Рисуется только часть image, которая была видна при старте приложения.<br>
+Пробовал решить. OnCreateForm<br>
+image.height:=screen.width<br>
+Результат: появились полосы прокрутки<br>
+invalidate - нет результата<br>
+invalidaterect - нет результата<br>
+Рисовал на bitmap`e, потом Draw на канву image - без результатно<br>
+</div>
+
+
+
+
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y256"></a>256<br>
+f:\!Docs Учимся програм-ть<br>
+скобку [] можно заменить (. .)<br>
+nil - неопределенный указатель<br>
+способ записать символ #65,"a", chr(<br>
+longword false&lt;true<br>
+frac(x) - дробная часть числа<br>
+int(x) - целая часть числа, также tranc(x)<br>
+интерфейсы<br>
+GUID - 128 разрядный идентификатор<br>
+</div>
+
+
+
+
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y265"></a>265<br>
+Чтение процесса!<br>
+Запусти Червы и набери несколько очков. Очки хранятся по адресу $2770B0<div class="kod">
+var h,u: hwnd;<br>
+d,r,e,num: longword<br>
+buf: array [0..$ffff]of byte</div><br>
+
+implementation<div class="kod">
+procedure a<br>
+begin<br>
+h:=findWindow(nil,'Сетевая игра "Червы"');<br>
+getWindowTreadProcessId(h,@d);<br>
+u:=OpenProcess(PROCESS_ALL_ACCESS,false,d);<br>
+r:=$2770B0;<br>
+if readprocessmemory(u,pointer(r),@buf,4,num) then // сложно находимое решение<br>
+showmessage('good da!')+#13#10+'h proc: '+#13+#10+inttohex(buf[0],4))<br>
+else begin<br>
+e:=getlasterror;<br>
+showmessage('error '+inttohex(e,4));<br>
+end;<br>
+closehandle(u);<br>
+end;</div>
+</div>
+
+
+
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y273"></a>273<br>
+Постепенный вывод Pascal abc<br>
+16.11.2016<div class="kod">
+begin<div class="q">
+var s:='Hello!';<br>
+foreach var c in s do<br>
+begin<div class="q">
+write(c);<br>
+sleep(random(250,1000));</div>
+end</div>
+end.</div>
+</div>
+
+
+
+<hr>
+<div class="no no1">
+<a id="y277"></a>277<br>
+Mirc (настройки)<br>
+1)Для получения файлов по DCC<br>
+Натройки->DCC/ignore/Method-Disabled<br>
+Options->DCC->Folders->DCC ignore->Disabled,<br>
+галку Turn Off снять!!!<br>
+2)Свой IP:<br>
+Connect->LocalInfo->IPaddress<br>
+3)Отключить вход по приглашению:<br>
+IRC->снять галку Auto-join channel on invite<br>
+4)Автоматически выполняемые при подключении команды:<br>
+IRC->Perform<br>
+поставить галку onconnect<br>
+Содержимое memo:<div class="kod">
+/nick Vasia<br>
+/msg nickserv identify 1234 ----------имя пароль<br>
+/join #delphi  ------------- вход на канал</div>
+
+@}-`-,--<br>
+4 3 6 <br>
+Ctrl+k<br>
+/me дарит<br>
+<div class="kod" style="text-align: center;"><pre>
+.....           .....
+,ad8PPPP88b,     ,d88PPPP8ba,
+d8P"      "Y8b, ,d8P"      "Y8b
+dP'           "8a8"           `Yd
+8(              "              )8
+I8                             8I
+Yb,                         ,dP
+"8a,                     ,a8"
+"8a,                 ,a8"
+"Yba             adP"
+`Y8a         a8P'
+`88,     ,88'
+"8b   d8"
+"8b d8"
+`888'
+"
+</pre></div>
+
+</div>
+<hr>
+<div class="no no1">
+<a id="y278"></a>278<br>
+Способы вызова клика<br>
+23.03.2017<br>
+Button1.Click;<br>
+Button1click(nil);<br>
+Button1.onclick(nil);<br>
+</div>
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y283"></a>283<br>
+FOTOSHOP<br>
+Шар рисуется из окружности, осветляя её<br>
+<img src="osvet.png" alt="">
+ осветлитель Brush=27<br>
+Rangl=shadow<br>
+Exper=58%<br>
+<hr>
+Сделать из цветного ч/белый чернобелый <br>
+image/mode/grayScale<br>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y285"></a>285<br>
+Полностью убивает enter в проге<br>
+10окт2009<br>
+(совет Amidamaru)<div class="kod">
+procedure TForm1.ApplicationEvents1Message(var Msg: tagMSG; var Handled: Boolean);<br>
+begin<br>
+with msg do begin<br>
+if (message=WM_KEYDOWN) and (wParam=VK_RETURN) then Handled:=true;<br>
+end;<br>
+end;</div>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y287"></a>287<br>
+Закладки Delphi<br>
+Ctrl+Shift+цифра - создает(убирает)<br>
+Ctrl+цифра - переходит<br>
+В к.меню Toggle Bookmark<br>
+Из реализации метода к объявлению<br>
+Ctrl+Shift+[курсор вверх]<br>
+Из объявления к реализации<br>
+Ctrl+Shift+[курсор вниз]<br>
+Сдвиг выделенного кода туда-сюда<br>
+Ctrl+Shift+i<br>
+Ctrl+Shift+u<br>
+GUID это строка типа {812-4DE-4C}<br>
+Ctrl+Shift+G<br>
+Ctrl+Shift+C - методы описанные в классе оказываются после implementation<br>
+</div>
+
+
+
+
+<hr>
+<div class="no no1">
+<a id="y292"></a>292<br>
+Сколько попыток требуется для угадывания числа?<br>
+29.05.2017<br>
+<table class="t292"><tr><td rowspan=5 style="padding-left: 10px; padding-right: 10px; vertical-align: bottom;"><img src="vz.svg" alt=""></td><td>
+элементов </td><td>попыток</td></tr><tr><td>
+1 </td><td>1</td></tr><tr><td>
+3 </td><td>2</td></tr><tr><td>
+7 </td><td>3</td></tr><tr><td>
+15 </td><td>4</td></tr></table>
+Сколько элементов угадает с n попыток?<br>
+x=(2^n)-1 // математика<br>
+x=intpower(2,n)-1// delphi uses math<br>
+Дано x элементов. За сколько попыток (n) угадаем?<br>
+n=log2(x+1) // Delphi (Math)<br>
+-------<br>
+Как проверить сколько знаков в числе?  300<br>
+<a href="https://otvet.mail.ru/question/187526094">otvet.mail.ru/187526094</a><br>
+log(8)=0,9 // 1 знак<br>
+300.log(2)/log(10)<br>
+JuriusZaksas Колво знаков n в числе k.<br>
+n:=trunc(ln(k)/ln(10))+1<br>
+</div>
+<hr>
+<div class="no no1">
+<a id="y293"></a>293<br>
+Циклы без goto<br>
+Угадывание числа<div class="kod">
+<span class="bbb">repeat</span><div class="q">
+x=random(10)<br>
+<span class="bbb">repeat</span><div class="q">
+<span class="bbb">readln</span>(y)<br>
+<span class="bbb">if</span> y&lt;x <span class="bbb">then write</span>(меньше)<br>
+<span class="bbb">if</span> y>x <span class="bbb">then write</span>(больше)</div>
+<span class="bbb">until</span> x=y<br>
+<span class="bbb">write</span>(молодец! еще раз?)<br>
+<span class="bbb">readfln</span>(c)</div>
+<span class="bbb">until</span> c='yes'</div>
+</div>
+
+<hr>
+<div class="no no1">
+<a id="y295"></a>295<br>
+XP восстановить в контекстном меню пункт 'создать точечный рисунок'<br>
+Лезь в Свойства Папки->Типы файлов<br>
+Находишь .BMP.Программа для открытия - ставишь mspaint<br>
+Всё<br>
+</div>
+<hr>
+<div class="no no5">
+<a id="y1295"></a><br>
+Авто-нумерация блоков. <a href="https://otvet.mail.ru/question/215612342"> ответ </a> код на
+<a href="https://jsfiddle.net/OPTlMUS/brvnxq8m/1/">jsfiddle.net</a>
+<hr>
+<a href="https://1fran1946.github.io/d5/">Этот документ в Сети</a>
+</div>
+
+
+
+
+
+<a href="#x23"> графика </a> &nbsp;
+<a href="#x30"> run bat </a>  
+<hr>
+<div class="no no6">
+<a id="x1"></a>x1<br>  Различные стрелочки юникодом<br>
+<div class="kod" style="position:relative;" id="fe1v1">
+with button15 do<div class="q">
+  begin<div class="q">
+    font.name:='Wingdings';<br>
+    caption:=#$e8; // стрелка вправо<br>
+    //caption:=#$e7; // стрелка влево<br>
+    //caption:=#$e9; // стрелка вверх<br>
+    //caption:=#$ea; // стрелка вниз<br>
+    font.size:=22;</div>
+  end;</div>
+<div class="mara" onclick="cpy(fe1v1);"></div>
+<div class="arw1"></div></div>
+<br>
+<div class="kod" style="position:relative;" id="fe1v2">
+ with label2 do<div class="q">
+  begin<div class="q">
+    font.name:='Webdings';<br>
+    caption:=#$33#$34#$35#$36; // стрелки<br>
+    //caption:=#$33; // стрелка влево<br>
+    //caption:=#$34; // стрелка вправо<br>
+    //caption:=#$35; // стрелка вверх<br>
+    //caption:=#$36; // стрелка вниз<br>
+    font.size:=22;</div>
+  end;</div>
+<div class="mara" onclick="cpy(fe1v2);"></div>
+<div class="arw2"></div></div>  
+<br>
+<div class="kod" style="position:relative;" id="fe1v3">
+ with label4 do<div class="q">
+  begin<div class="q">
+    font.name:='Wingdings';<br>
+    caption:=#$ef#$f0#$f1#$f2; // стрелки<br>
+    //caption:=#$ef; // стрелка влево<br>
+    //caption:=#$f0; // стрелка вправо<br>
+    //caption:=#$f1; // стрелка вверх<br>
+    //caption:=#$f2; // стрелка вниз<br>
+    font.size:=22;</div>
+  end;</div>
+<div class="mara" onclick="cpy(fe1v3);"></div>
+<div class="arw3"></div></div>   
+</div>
+
+
+
+
+<hr>
+<div class="no no6">
+<a id="x2"></a>x2<br>  Браузер<br>
+<div class="kod" style="position:relative;" id="fe2v1">
+procedure asWeb(x: string); // отображение как браузером<br>
+var eva: tstringlist;<br>
+begin<div class="q">
+//on form create: WebBrowser1.Navigate('about:blank');<br>
+////////  создание файла болванки<br>
+eva:=tstringlist.create;<br>
+eva.add('&lt;html&gt;&lt;body bgcolor="blue"&gt;');<br>
+eva.add('&lt;img src='#39+x+#39'&gt;&lt;br&gt;&lt;br&gt;');<br>
+eva.add('&lt;/body&gt;&lt;/html&gt;');<br>
+eva.SaveToFile('text.htm');<br>
+eva.free;<br>
+/////// show файла<br>
+form1.WebBrowser1.Navigate('file:///'+<br>
+    ExtractFilePath(application.ExeName)+'text.htm');</div>
+end;
+<div class="mara" onclick="cpy(fe2v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x3"></a>x3<br> Спрайт <br>
+<div class="kod" style="position:relative;" id="fe3v1">
+procedure sprc(z: hdc; xx,yy: integer; d: hotdog); // спрайт3<br>
+// ,где type hotdog = array [boolean] of tbitmap;<br>
+var w,h: integer;<br>
+begin<div class="q">
+      w:=d[true].width;<br>
+      h:=d[true].Height;<br>
+      bitblt(z,xx,yy,w,h, d[true].canvas.handle,0,0,srcinvert);<br>
+      bitblt(z,xx,yy,w,h, d[false].canvas.handle,0,0,srcAnd); // mask<br>
+      bitblt(z,xx,yy,w,h, d[true].canvas.handle,0,0,srcinvert);</div>
+end;
+<div class="mara" onclick="cpy(fe3v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x4"></a>x4<br>  Многострочный кепшн<br>
+<div class="kod" style="position:relative;" id="fe4v1">
+procedure polystr(x: twincontrol);// многострочный заголовок<br>
+var i: thandle;<br>
+begin<div class="q">
+i:=x.handle;<br>
+SetWindowLong(i, GWL_STYLE, GetWindowLong(i, GWL_STYLE) OR BS_MULTILINE);</div>
+end;
+
+<div class="mara" onclick="cpy(fe4v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x5"></a>x5<br>  список файлов<br>
+<div class="kod" style="position:relative;" id="fe5v1">
+function getlist2(src,msk: string; x: tstringlist): word; // список файлов по маске<br>
+// src:='c:\py3eg\';     msk:='*.py';<br>
+var i: integer;<div class="q">
+    sr: TSearchRec;<br>
+    FileAttrs: Integer;<br>
+    zz: tstringlist;<br>
+<br>
+
+    procedure addy;<br>
+    begin<div class="q">
+      inc(i);<br>
+      zz.add(sr.Name);</div>
+    end;</div>
+begin<br>
+zz:=tstringlist.create;<br>
+FileAttrs:=0<div class="q">
+   +faHidden   // скрытый<br>
+   +faSysFile  // системный<br>
+   +faVolumeID //<br>
+   +faArchive  // архивный<br>
+   +faAnyFile; // любой</div>
+<br>
+i:=0;<br>
+if FindFirst((src+msk), FileAttrs, sr)=0 then   //<div class="q">
+  if (sr.Attr and FileAttrs)=sr.Attr then<div class="q">
+    begin<div class="q">
+      addy;<br>
+      while FindNext(sr)=0 do<div class="q">
+        if (sr.Attr and FileAttrs)=sr.Attr then<div class="q">
+          addy;</div></div>
+      FindClose(sr);</div>
+    end;</div></div>
+result:=i;<br>
+zz.Sort;<br>
+x.assign(zz);<br>
+zz.free;<br>
+end;
+<div class="mara" onclick="cpy(fe5v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x6"></a>x6<br>  name no ext<br>
+<div class="kod" style="position:relative;" id="fe6v1">
+function NameNoExt(x: string): string;<br>
+begin // имя файла без расширения<div class="q">
+ result:=Copy(x,1,length(x)-length(ExtractFileExt(x)));</div>
+end;
+<div class="mara" onclick="cpy(fe6v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x7"></a>x7<br>  dir exist<br>
+<div class="kod" style="position:relative;" id="fe7v1">
+function dexists(x: string): boolean; // существование директории<br>
+var s: tsearchrec;<br>
+begin<div class="q">
+result:=FindFirst(x,faDirectory,s)=0;<br>
+FindClose(s);<br>
+//mkdir(s)//  создание директории</div>
+end;
+<div class="mara" onclick="cpy(fe7v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x8"></a>x8<br>  flood fill<br>
+<div class="kod" style="position:relative;" id="fe8v1">
+    brush.color:=clblue;  // краска<br>
+    jertva_color:=clred;  // уничтожить цвет<br>
+    with cliprect do floodfill(right div 2,bottom div 4, jertva_color, fsSurface);<br>
+    brush.color:=clsilver;  //краска<br>
+    stop_color:=clblack;    // стоп-цвет<br>
+    with cliprect do floodfill(right div 2,3*bottom div 4, stop_color, fsBorder);
+<div class="mara" onclick="cpy(fe8v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x9"></a>x9<br>  inputbox<br>
+<div class="kod" style="position:relative;" id="fe9v1">
+i:=strtoint(inputbox('','Enter i:','1'));
+<div class="mara" onclick="cpy(fe9v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x10"></a>x10<br>  диагональ<br>
+<div class="kod" style="position:relative;" id="fe10v1">
+function diogen(p1,p2: tpoint): atpoint; // диагональ    // uses math<br>
+// где type atpoint=array of tpoint;<br>
+var i: integer;<div class="q">
+    kkx,kky: single; // коэффициенты<br>
+    Lmax,dx,dy: integer;</div>
+begin<br>
+setlength(result,0);<br>
+dx:=p1.x-p2.x;<br>
+dy:=p1.y-p2.y;<br>
+dx:=p2.x-p1.x;<br>
+dy:=p2.y-p1.y;<br>
+Lmax:=max(abs(dx),abs(dy));<br>
+kkx:=dx/Lmax;<br>
+kky:=dy/Lmax;<br>
+setlength(result,1+Lmax);<br>
+result[0]:=point(p1.x,p1.y);<br>
+for i:=1 to Lmax do<div class="q">
+  result[i]:=point(p1.x+round((i*dx)/Lmax),<br>
+                   p1.y+round((i*dy)/Lmax));//  // точность и раунд</div>
+end;
+<div class="mara" onclick="cpy(fe10v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x11"></a>x11<br>  квадрата<br>
+<div class="kod" style="position:relative;" id="fe11v1">
+function diogen2(p1,p2: tpoint): atpoint; // заполнить квадрат  // uses math<br>
+// где type atpoint=array of tpoint;<br>
+var i,j,k: integer;<div class="q">
+    sx,sy,hx,hy: integer;</div>
+begin<br>
+setlength(result,0);<br>
+k:=0;<br>
+sx:=min(p1.x,p2.x);<br>
+sy:=min(p1.y,p2.y);<br>
+hx:=max(p1.x,p2.x);<br>
+hy:=max(p1.y,p2.y);<br>
+for i:=sx to hx do<div class="q">
+  for j:=sy to hy do<div class="q">
+    if (i=sx)or(i=hx)or(j=sy)or(j=hy) then<br>
+    begin<div class="q">
+      inc(k);<br>
+      setlength(result,k);<br>
+      result[k-1]:=point(i,j);</div>
+    end;</div></div>
+end;
+<div class="mara" onclick="cpy(fe11v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x12"></a>x12<br>  круга<br>
+<div class="kod" style="position:relative;" id="fe12v1">
+function diogen3(p1,p2: tpoint): atpoint; // заполнить круг   // uses math<br>
+// где type atpoint=array of tpoint;<br>
+var i,j,k: integer;<div class="q">
+    dx,dy: integer;<br>
+    be: tbitmap;<br>
+    sx,sy: integer;</div>
+begin<br>
+setlength(result,0);<br>
+be:=tbitmap.create;<br>
+k:=0;<br>
+sx:=min(p1.x,p2.x);<br>
+sy:=min(p1.y,p2.y);<br>
+dx:=p1.x-p2.x;<br>
+dy:=p1.y-p2.y;<br>
+dx:=p2.x-p1.x;<br>
+dy:=p2.y-p1.y;<br>
+be.width:=abs(dx)+1;<br>
+be.height:=abs(dy)+1;<br>
+with be.canvas do<div class="q">
+  begin<div class="q">
+    brush.color:=clblue;<br>
+    fillrect(cliprect);<br>
+    pen.color:=clred;<br>
+    ellipse(cliprect);<br>
+    for i:=0 to be.width-1 do<div class="q">
+      for j:=0 to be.height-1 do  <div class="q"> 
+        begin<div class="q">
+          if pixels[i,j]=clred then<div class="q">
+            begin<div class="q">
+              inc(k);<br>
+              setlength(result,k);<br>
+              result[k-1]:=point(sx+i,sy+j);</div>
+            end;</div></div>
+        end;</div></div> </div>
+  end;</div>
+be.free;<br>
+end;
+<div class="mara" onclick="cpy(fe12v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x13"></a>x13<br>  бесконечность<br>
+<div class="kod" style="position:relative;" id="fe13v1">
+Application.ProcessMessages();
+<div class="mara" onclick="cpy(fe13v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x14"></a>x14<br>  бит болт<br>
+<div class="kod" style="position:relative;" id="fe14v1">
+//BitBlt(DestDC: HDC; X, Y, Width, Height: Integer; SrcDC: HDC; XSrc, YSrc: Integer; Rop: Longint): Bool;
+//BLACKNESS CAPTUREBLT DSTINVERT MERGECOPY MERGEPAINT NOMIRRORBITMAP NOTSRCCOPY NOTSRCERASE
+//PATCOPY PATINVERT PATPAINT SRCAND SRCCOPY SRCERASE SRCINVERT SRCPAINT WHITENESS
+<div class="mara" onclick="cpy(fe14v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x15"></a>x15<br>  string replace<br>
+<div class="kod" style="position:relative;" id="fe15v1">
+StringReplace(d,'=',' ',[rfReplaceAll,rfIgnoreCase])
+<div class="mara" onclick="cpy(fe15v1);"></div></div>  
+</div>
+<hr>
+<div class="no no6">
+<a id="x16"></a>x16<br>  rus buf<br>
+<div class="kod" style="position:relative;" id="fe16v1">
+procedure CopyStringToClipboard(const Value: String); // буфер для русских  uses ClipBrd,<br>
+const<div class="q">
+  RusLocale = (SUBLANG_DEFAULT shl $A) or LANG_RUSSIAN;</div>
+var<div class="q">
+  hMem: THandle;<br>
+  pData: Pointer;</div>
+begin<div class="q">
+  Clipboard.AsText:=value;  // разблокировать буфер. хз как он блокирутся, почему однозарядный<br>
+  Clipboard.Open;<br>
+  try<div class="q">
+    Clipboard.AsText := Value;<br>
+    hMem := GlobalAlloc(GMEM_MOVEABLE, SizeOf(DWORD));<br>
+    try<br>
+      pData := GlobalLock(hMem);<br>
+      try<br>
+        DWORD(pData^) := RusLocale;<br>
+      finally<br>
+        GlobalUnlock(hMem);<br>
+      end;<br>
+        Clipboard.SetAsHandle(CF_LOCALE, hMem);<br>
+    finally<div class="q">
+      GlobalFree(hMem);</div>
+    end;</div>
+  finally<div class="q">
+    Clipboard.Close;</div>
+  end;</div>
+end;
+<div class="mara" onclick="cpy(fe16v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x17"></a>x17<br>  memo to buf<br>
+<div class="kod" style="position:relative;" id="fe17v1">
+{<br>
+  procedure chn; // CopyToClipboard<br>
+  begin<div class="q">
+    memo313.SelectAll;<br>
+    memo313.CopyToClipboard;</div>
+  end;<br>
+}<br>
+if GetKeyboardLayout(0)=67699721 then // если англ раскладка<br>
+  begin<div class="q">
+    ActivateKeyboardLayout(68748313,KLF_ACTIVATE);  // поставить русскую раскладку<br>
+    chn; // CopyToClipboard<br>
+    ActivateKeyboardLayout(67699721,KLF_ACTIVATE); // вернуть прежнюю расклдку</div>
+  end<br>
+  else<br>
+  begin<div class="q">
+    chn; // CopyToClipboard</div>
+  end;
+<div class="mara" onclick="cpy(fe17v1);"></div></div>  
+</div>
+
+
+<hr>
+<div class="no no6">
+<a id="x18"></a>x18<br>  треуг паскаля<br>
+<div class="kod" style="position:relative;" id="fe18v1">
+function ftr(x,y:integer):double;// собственно функция Х из У<br>
+// вызов:  ftr(5,36)<br>
+{<br>
+//глобальные<br>
+const trelength=1001;  // длина на измерение<br>
+trepas: array [0..trelength,0..trelength]of double; // треугольник<br>
+//онкреате<br>
+for i:=0 to trelength do<div class="q">
+  for j:=0 to trelength do trepas[i,j]:=0; // обнуление треугольника</div>
+}<br>
+var ycell: integer; // y-coord of cell<br>
+begin<br>
+result:=0;<br>
+ycell:=y-x;<br>
+if x<0 then exit;<br>
+if ycell<0 then exit;<br>
+if (x=0)or(ycell=0)then<br>
+  begin<div class="q">
+    ftr:=1;<br>
+    trepas[x,ycell]:=1;</div>
+  end<br>
+  else<br>
+  begin<div class="q">
+    if trepas[x,ycell]=0 then<br>
+       trepas[x,ycell]:=ftr(x-1,y-1)+ftr(x,y-1);<br>
+    ftr:=trepas[x,ycell];</div>
+  end;<br>
+end;
+<div class="mara" onclick="cpy(fe18v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x19"></a>x19<br>  sm smerr<br>
+<div class="kod" style="position:relative;" id="fe19v1">
+// procedure sm(x: string); overload; // короткий showmessage<br>
+// procedure sm(x: integer); overload; // короткий showmessage integer<br>
+// procedure sm(x: single); overload; // короткий showmessage single<br>
+procedure sm(x: string);  // короткий showmessage<br>
+begin<br>
+showmessage(x);<br>
+end;<br>
+procedure sm(x: integer);  // короткий showmessage integer<br>
+begin<br>
+showmessage(inttostr(x));<br>
+end;<br>
+procedure sm(x: single);  // короткий showmessage single<br>
+begin<br>
+showmessage(floattostr(x));<br>
+end;<br>
+procedure smerr; // последняя ошибка GettLastError<br>
+var s: pchar;<br>
+begin<div class="q">
+    FormatMessage(FORMAT_MESSAGE_ALLOCATE_BUFFER or FORMAT_MESSAGE_FROM_SYSTEM,<br>
+    nil,GetLastError,LANG_USER_DEFAULT,@s,0,nil);<br>
+    sm(s);</div>
+end;
+<div class="mara" onclick="cpy(fe19v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x20"></a>x20<br>  utf8 ASCII<br>
+<div class="kod" style="position:relative;" id="fe20v1">
+//type UTF8String = type string;<br>
+<br>
+function UnicodeToUtf8(Dest: PChar; MaxDestBytes: Cardinal; Source: PWideChar; SourceChars: Cardinal): Cardinal;<br>
+var<div class="q">
+  i, count: Cardinal;<br>
+  c: Cardinal;</div>
+begin<br>
+  Result := 0;<br>
+  if Source = nil then Exit;<br>
+  count := 0;<br>
+  i := 0;<br>
+  if Dest <> nil then<br>
+  begin<br>
+    while (i < SourceChars) and (count < MaxDestBytes) do<br>
+    begin<br>
+      c := Cardinal(Source[i]);<br>
+      Inc(i);<br>
+      if c <= $7F then<br>
+      begin<br>
+        Dest[count] := Char(c);<br>
+        Inc(count);<br>
+      end<br>
+      else if c > $7FF then<br>
+      begin<div class="q">
+        if count + 3 > MaxDestBytes then<br>
+          break;<br>
+        Dest[count] := Char($E0 or (c shr 12));<br>
+        Dest[count+1] := Char($80 or ((c shr 6) and $3F));<br>
+        Dest[count+2] := Char($80 or (c and $3F));<br>
+        Inc(count,3);</div>
+      end<br>
+      else //  $7F < Source[i] <= $7FF<br>
+      begin<div class="q">
+        if count + 2 > MaxDestBytes then<br>
+          break;<br>
+        Dest[count] := Char($C0 or (c shr 6));<br>
+        Dest[count+1] := Char($80 or (c and $3F));<br>
+        Inc(count,2);</div>
+      end;<br>
+    end;<br>
+    if count >= MaxDestBytes then count := MaxDestBytes-1;<br>
+    Dest[count] := #0;<br>
+  end<br>
+  else<br>
+  begin<br>
+    while i < SourceChars do<br>
+    begin<br>
+      c := Integer(Source[i]);<br>
+      Inc(i);<br>
+      if c > $7F then<br>
+      begin<div class="q">
+        if c > $7FF then<br>
+          Inc(count);<br>
+        Inc(count);</div>
+      end;<br>
+      Inc(count);<br>
+    end;<br>
+  end;<br>
+  Result := count+1;  // convert zero based index to byte count<br>
+end;<br>
+
+<br>
+function Utf8Encode(const WS: WideString): UTF8String;<br>
+var<div class="q">
+  L: Integer;<br>
+  Temp: UTF8String;</div>
+begin<div class="q">
+  Result := '';<br>
+  if WS = '' then Exit;<br>
+  SetLength(Temp, Length(WS) * 3); // SetLength includes space for null terminator<br>
+
+  L := UnicodeToUtf8(PChar(Temp), Length(Temp)+1, PWideChar(WS), Length(WS));<br>
+  if L > 0 then<br>
+    SetLength(Temp, L-1)<br>
+  else<br>
+    Temp := '';<br>
+  Result := Temp;</div>
+end;<br>
+<br>
+function AnsiToUtf8(const S: string): UTF8String;<br>
+begin<div class="q">
+  Result := Utf8Encode(S);</div>
+end;<br>
+<br>
+function utf8to(x: string): string;// utf8  --->  cp1251<br>
+var i: cardinal;<div class="q">
+    d: string;<br>
+    w: word;<br>
+    a: array[0..1]of char absolute w;</div>
+begin<br>
+d:='';<br>
+i:=1;//<br>
+while i<=length(x) do begin<br>
+  case x[i] of<br>
+    #0..#$80: d:=d+x[i];<br>
+    #$d0,#$d1: begin<br>
+      a[1]:=x[i];<br>
+      inc(i);<br>
+      a[0]:=x[i];<br>
+      case w of<div class="q">
+        $D0B0..$D0BF: d:=d+chr(w-$D0B0+$e0);<br>
+        $D180..$D18F: d:=d+chr(w-$D180+$f0);<br>
+        $D090..$D09F: d:=d+chr(w-$D090+$c0);<br>
+        $D0A0..$D0AF: d:=d+chr(w-$D0A0+$d0);<br>
+        else d:=d+'?';<br>
+        end;</div>
+      end;<br>
+    end;<br>
+  inc(i);<br>
+  end;<br>
+result:=d;<br>  
+end;
+<div class="mara" onclick="cpy(fe20v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x21"></a>x21<br>  ФИЛЬТР ВВОДА<br>
+<div class="kod" style="position:relative;" id="fe21v1">
+procedure TForm1.Edit1KeyPress(Sender: TObject; var Key: Char);<br>
+begin<div class="q">
+if not (key in['0'..'9',decimalseparator,#8]) then key:=#0;</div>
+end;
+
+<div class="mara" onclick="cpy(fe21v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x22"></a>x22<br>  time year<br>
+<div class="kod" style="position:relative;" id="fe22v1">
+function g2016: string; // даёт текущий год<br>
+var Year, Month, Day : Word;<br>
+begin<div class="q">
+DecodeDate(now, Year, Month, Day);<br>
+result:=inttostr(Year);<br>
+end;</div>
+<div class="mara" onclick="cpy(fe22v1);"></div></div>  
+
+gettickcount<br>
+<div class="kod" style="position:relative;" id="fe22v2">
+s:=inttostr(gettickcount);<br>
+image1.picture.SaveToFile('bmp/'+s+'.bmp');
+<div class="mara" onclick="cpy(fe22v2);"></div></div> 
+
+часы<br>
+<div class="kod" style="position:relative;" id="fe22v3">
+label1.Caption:=timetostr(time);
+<div class="mara" onclick="cpy(fe22v3);"></div></div> 
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x23"></a>x<br>  графика<br>
+StretchDraw
+<div class="kod" style="position:relative;" id="fe23v1">
+with image2.Canvas do StretchDraw(cliprect,mk[0]);
+<div class="mara" onclick="cpy(fe23v1);"></div></div>  
+draw трансп
+<div class="kod" style="position:relative;" id="fe23v2">
+with b2.canvas do  // как бы спрайт<div class="q">
+  begin<div class="q">
+    brush.color:=clred;<br>
+    fillrect(cliprect);<br>
+    pen.color:=claqua;<br>
+    pen.Width:=7;<br>
+    ellipse(cx-k,cy-k,cx+k,cy+k);</div>
+  end;</div>
+b2.Transparent:=true;   // прозрачность включена<br>
+b2.TransparentColor:=clred; // прозрачный цвет<br>
+b2.TransparentMode:=tmFixed;//tmAuto;  // откуда брать прозрачный цвет<br>
+b1.canvas.draw(0,0,b2); // печать с прозрачностью<br>
+form1.image1.Canvas.Draw(0,0,b1);
+<div class="mara" onclick="cpy(fe23v2);"></div></div> 
+
+copyrect
+<div class="kod" style="position:relative;" id="fe23v3">
+with image1.canvas do<div class="q">
+  begin<div class="q">
+//BLACKNESS CAPTUREBLT DSTINVERT MERGECOPY MERGEPAINT NOMIRRORBITMAP NOTSRCCOPY NOTSRCERASE<br>
+//PATCOPY PATINVERT PATPAINT SRCAND SRCCOPY SRCERASE SRCINVERT SRCPAINT WHITENESS<br>
+    //CopyMode:=SRCINVERT;<br>
+    CopyRect(cliprect,b.canvas,b.canvas.cliprect);</div>
+  end;</div>
+
+<div class="mara" onclick="cpy(fe23v3);"></div></div> 
+PolyBezier
+<div class="kod" style="position:relative;" id="fe23v4">
+//p1,p2,p3: tpoint;<div class="q">
+    p1:=point(200,40); // работает с 4 точками<br>
+    p2:=point(0,200);<br>
+    p3:=point(400,200);<br>
+    PolyBezier([p1,// начало<br>
+                p2,p3, // две контрольные точки<br>
+                p1]); // конец</div>
+<div class="mara" onclick="cpy(fe23v4);"></div></div> 
+PolyBezierTo
+<div class="kod" style="position:relative;" id="fe23v5">
+    //p1,p2,p3,p4: tpoint;<div class="q">
+    p1:=point(200,40); // PolyBezierTo работает с 3*n точками<br>
+    p2:=point(0,200);<br>
+    p3:=point(400,200);<br>
+    p4:=point(200,0);<br>
+    moveto(p1.x,p1.y); // начало<br>
+    PolyBezierTo([<br>
+                p2,p3, // две контрольные точки<br>
+                p1,  // конец<br>
+                p4,p4,// две контрольные точки<br>
+                p1]); // конец</div>
+
+<div class="mara" onclick="cpy(fe23v5);"></div></div> 
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x24"></a>x24<br>  arccos<br>arccos
+<div class="kod" style="position:relative;" id="fe24v1">
+function arc1cos(x: extended): extended; // правильный арккосинус<br>
+begin<div class="q">
+   if x>1 then x:=1.0;<br>
+   if x<-1 then x:=-1.0;<br>
+   if x<0 then<br>
+     result:=pi-arccos(-x)<br>
+     else<br>
+     result:=arccos(x);</div>
+end;
+<div class="mara" onclick="cpy(fe24v1);"></div></div>  
+
+arcsin
+<div class="kod" style="position:relative;" id="fe24v2">
+function arc1sin(x: extended): extended; // правильный арксинус<br>
+begin<div class="q">
+   if x>1 then x:=1.0;<br>
+   if x<-1 then x:=-1.0;<br>
+   if x<0 then<br>
+     result:=-arcsin(-x)<br>
+     else<br>
+     result:=arcsin(x);</div>
+end;
+<div class="mara" onclick="cpy(fe24v2);"></div></div> 
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x25"></a>x25<br>  конструктор<br>
+<div class="kod" style="position:relative;" id="fe25v1">
+{<br>
+Tmoor = class (TImage) //  uses ExtCtrls,<div class="q">
+  public<div class="q">
+    Constructor Create(AOwner: tcomponent); override; //<br>
+    Destructor  Destroy; override;</div></div>
+}<br>
+<br>
+constructor Tmoor.Create(AOwner: tcomponent);<br>
+begin<div class="q">
+  // Сначала выполняется родительский конструктор (TObject)<br>
+  inherited;  // Вызов родительского метода Create<br>
+  // тут некий код</div>
+end;<br>
+<br>
+destructor Tmoor.Destroy;<br>
+begin<div class="q">
+  // тут некий код<br>
+  inherited Destroy;</div>
+end;
+<div class="mara" onclick="cpy(fe25v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x26"></a>x26<br>  API<br>GetWindowText
+<div class="kod" style="position:relative;" id="fe26v1">
+function Getext(hW: hWnd): string; // получаю текст окна по хендлу<br>
+var b: PChar;<br>
+begin<div class="q">
+  GetMem(b, 255);<br>
+  try<br>
+  if GetWindowText(hW,b,255)>0 then<br>
+    result:=StrPas(b);<br>
+  finally<br>
+    freeMem(b, sizeof(b^));<br>
+  end;</div>
+end;
+<div class="mara" onclick="cpy(fe26v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x27"></a>x27<br>  вторая копия<br>mutex
+<div class="kod" style="position:relative;" id="fe27v1">
+uses<div class="q">
+  Windows,<br>
+  Dialogs,<br>
+  Forms,<br>
+  SysUtils,<br>
+  Utim010 in 'Utim010.pas' {cocktimer2017};</div>
+<br>
+type  PW=^TW;  //  для свойств окна<br>
+      TW=record<div class="q">
+        Cap: string;<br>
+        Cla: string;<br>
+        Win: THandle;</div>
+      end;<br>
+var h: thandle;<br>
+{$R *.RES}<br>
+<br>
+<br>
+function Getext(hW: hWnd): string; // получаю текст окна по хендлу<br>
+var b: PChar;<br>
+begin<br>
+  GetMem(b, 255);<br>
+  try<br>
+  if GetWindowText(hW,b,255)>0 then<br>
+    result:=StrPas(b);<br>
+  finally<br>
+    freeMem(b, sizeof(b^));<br>
+  end;<br>
+end;<br>
+<br>
+function EnClass(hw: hwnd; lparam:longint): bool; stdcall; // енумерация по классу<br>
+var b: PChar;<br>
+begin<div class="q">
+  result:=true;     // цикличный вызов<br>
+  GetMem(b, 255);   // дочерние классы<br>
+  try<br>
+    if GetClassName(hw,b,255)>0 then<br>
+      begin<br>
+        if PW(lParam).cla=StrPas(b) then<br>
+          PW(lParam).Win:=hW;<br>
+      end;<br>
+  finally<br>
+    freeMem(b, sizeof(b^));<br>
+  end;</div>
+end;<br>
+<br>
+function fn: cardinal; // хендл окна по его классу<br>
+var W: TW;<br>
+begin<br>
+W.Win:=0;<br>
+W.cla:='Tcocktimer2017';<br>
+EnumWindows(@EnClass, LongInt(@W));<br>
+result:=W.Win;<br>
+end;<br>
+<br>
+<br>
+begin<br>
+// запрет второй копии<br>
+h:=CreateMutex(nil, True, 'уникальная фраза');<br>
+if GetLastError = ERROR_ALREADY_EXISTS then<br>
+    begin<br>
+      
+      if fn<>0 then   // // хендл окна по его классу<br>
+        begin<br>
+          showmessage('Программа уже работает!'#10#13+Getext(fn));<br>
+        end<br>
+        else<br>
+        begin<div class="q">
+          showmessage('Программа уже работает!');</div>
+        end;<br>
+      CloseHandle(h); // Закрываем THandle<br>
+      Exit;<br>
+    end<br>
+    else<br>
+    begin<br>
+      try<div class="q">
+        Application.Initialize;<br>
+        Application.CreateForm(Tcocktimer2017, cocktimer2017);<br>
+        Application.Run;</div>
+      finally<div class="q">
+        CloseHandle(h); // Закрываем THandle</div>
+      end;<br>
+    end;<br>
+end.
+<div class="mara" onclick="cpy(fe27v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x28"></a>x28<br>  round<br>
+<div class="kod" style="position:relative;" id="fe28v1">
+Round(12.75) = 13 <br>
+Trunc(12.75) = 12 <br>
+Int(12.75) = 12 <br>
+Frac(12.75) = 0.75
+<div class="mara" onclick="cpy(fe28v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x29"></a>x29<br>  exception<br>
+<div class="kod" style="position:relative;" id="fe29v1">
+try<br>
+  p:=hx;  //попробовать присвоить синглу экстендед<br>
+except    // если не получилось<br>
+  if hx>0 then  // тогда присвоить бесконечность<div class="q">
+    p:=1/0<br>
+    else<br>
+    p:=-1/0;</div>
+end;
+<div class="mara" onclick="cpy(fe29v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x30"></a>x30<br>  run<br>bat
+<div class="kod" style="position:relative;" id="fe30v1">
+// ShellAPI, // подключаешь ShellApi<br>
+//var s: string;<br>
+s:=extractfilepath(paramstr(0))+'1.bat'; // полный путь к бату<br>
+ShellExecute(Application.Handle,PChar('open'),<br>
+  PChar(s),Nil,Nil,SW_SHOW);//
+<div class="mara" onclick="cpy(fe30v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x31"></a>x31<br>  drag<br>
+<div class="kod" style="position:relative;" id="fe31v1">
+procedure TForm1.Panel4MouseDown(Sender: TObject; Button: TMouseButton;<br>
+  Shift: TShiftState; X, Y: Integer);<br>
+begin // компонент можно перемещать мышью<br>
+ReleaseCapture;<br>
+Panel4.perform(WM_SysCommand,$F012,0);<br>
+end;
+<div class="mara" onclick="cpy(fe31v1);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x32"></a>x32<br>  окно<br>для отладки
+<div class="kod" style="position:relative;" id="fe32v1">
+procedure my7bug;// вывод окна отладочной графики<br>
+var f17: tform;<div class="q">
+    im17: timage; ///  может пригодиться uses  ExtCtrls,</div>
+begin<br>
+f17:=tform.create(form1);// создал окно<br>
+f17.width:=300;<br>
+f17.height:=300;<br>
+f17.color:=clgreen;// фон окна<br>
+im17:=timage.create(f17);<br>
+im17.parent:=f17;<br>
+im17.width:=400;//.width;//300;<br>
+im17.height:=400;//300;<br>
+with im17.canvas do<br>
+  begin<div class="q">
+    brush.color:=clred;<br>
+    fillrect(cliprect); // зачистил рисунок<br>
+    brush.color:=clblue; ellipse(cliprect);<br>
+    //draw(0,0,btm); // тут выводишь твою картинку</div>
+  end;<br>
+f17.showmodal; // модально показал<br>
+end;
+<div class="mara" onclick="cpy(fe32v1);"></div></div>  
+
+таскаемое
+<div class="kod" style="position:relative;" id="fe32v2">
+procedure tform1.mnd(Sender: TObject; Button: TMouseButton;<br>
+  Shift: TShiftState; X, Y: Integer);<br>
+begin<br>
+ReleaseCapture;<br>
+(sender as tpanel).perform(WM_SysCommand,$F012,0);<br>
+end;
+<div class="mara" onclick="cpy(fe32v2);"></div></div>  
+</div>
+
+<hr>
+<div class="no no6">
+<a id="x33"></a>x33<br>  гены<br>r
+<div class="kod" style="position:relative;" id="fe33v1">
+села а55 крестьянин<br>
+<br>
+и законная жена его<br>
+<br>
+оба православные<br>
+/<br>
+/<br>
+-------------------------------<br>
+<div class="mara" onclick="cpy(fe33v1);"></div></div>  
+m
+<div class="kod" style="position:relative;" id="fe33v2">
+села а55 крестьянина<br>
+<br>
+православного вероисповедания<br>
+1б<br>
+<br>
+/<br>
+/<br>
+-------<br>
+села а55 крестьянина<br>
+<br>
+<br>
+православного вероисповедания<br>
+1б <br>
+<br>
+/<br>
+/<br>
+------------------------------<br>
+<div class="mara" onclick="cpy(fe33v2);"></div></div>  
+d
+<div class="kod" style="position:relative;" id="fe33v3">
+села а55 крестьянина<br>
+<br>
+сын<br>
+<br>
+<br>
+<br>
+-------------------------------<br>
+<div class="mara" onclick="cpy(fe33v3);"></div></div>  
+</div>
+
+<hr>	
+<div class="no no6">
+<a id="x33i"></a>x33i<br> 
+Копирование тескта одним кликом
+<div class="kod" style="position:relative;" id="fe33v222">
+&lt;!DOCTYPE html&gt;</br>
+&lt;html lang="ru"&gt;</br>
+&lt;head&gt;</br>
+&lt;style&gt;</br>
+.kod {padding: 10px; </br>
+background: #e9ffc7; </br>
+width: 85%; </br>
+text-align: left; </br>
+margin: auto; </br>
+color: #000;}</br>
+.mara {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAATCAIAAAAS8MqlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEsSURBVDhPnZC9TsMwFIV5RXZ4BF6BjpHYwgQrCxLpEDEQJ6FlohJMaQOoQvyUhZaGspHE8U+55lbErU0j9egosm/O5yN76zsvNrDCTg09Pb/oIdMLbK4Jtp3O5XrSjsE3iqI1ZI2lb5+9x2wuZRzHwIRhSAjRo7qX2iRAUsKiZegiCOxYOoK2KelP2rdjyP2esxCS3e6VBZNSSCG44CDEVLWaCdy6rvtH1thglPWGU5JMvJt3zB2cP+x7d1wIx3GAQa1icCpWMc4Qg4kacg7r2dcMbMEGr9n18CNIxmfLbXsn6e5xf/swgYkF04UYY7xiVVVRCqYlTFYxXb7v123te9V2ZGszDW8AIdVBS1oWpXLejMFvbGt5qm3HejfTiJlqxv4TBuxYozfC8uIHUDp6oFBQcH0AAAAASUVORK5CYII=);</br>
+cursor: pointer;</br>
+width: 18px; </br>
+height: 19px; </br>
+position: absolute; </br>
+right: 0px; </br>
+top: 0px;</br>
+}</br>
+&lt;/style&gt;</br>
+&lt;/head&gt;</br>
+&lt;body bgcolor=yellow&gt;</br>
+&lt;div style="width: 400px;background: #fff; padding: 33px; margin: auto;"&gt;</br>
+Экспотенциальная запись - представление действительных чисел в виде мантиссы и порядка</br>
+&lt;div class="kod" style="position:relative;" id="fey"&gt;</br>
+N=M*nP</br>
+&lt;div class="mara" onclick="cpy(fey);" title="Copy"&gt;&lt;/div&gt;</br>
+&lt;/div&gt;</br>
+&lt;/div&gt;</br>
+&lt;script&gt;</br>
+function cpy(k){ // копирование в буфер обмена</br>
+  window.getSelection().removeAllRanges();</br>
+  var range = document.createRange();  </br>
+  range.selectNode(k);  </br>
+  window.getSelection().addRange(range);  </br>
+  try {</br>
+    var successful = document.execCommand('copy');  </br>
+  } catch(err) { }  </br>
+  window.getSelection().removeAllRanges();  </br>
+}</br>
+&lt;/script&gt;</br>
+&lt;/body&gt;&lt;/html&gt;</br>
+
+
+<div class="mara" onclick="cpy(fe33v222);"></div></div>  
+</div>	
+	
+
+<hr>
+2002-2019
+<script>
+//*********************************************script
+function cpy(k){ // копирование в буфер обмена
+  window.getSelection().removeAllRanges();
+  var range = document.createRange();  
+  range.selectNode(k);  
+  window.getSelection().addRange(range);  
+  try {
+    var successful = document.execCommand('copy');  
+  } catch(err) { }  
+  window.getSelection().removeAllRanges();  
+}
+</script>
+
+
+  
+
+</body></html>

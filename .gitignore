@@ -1,0 +1,8 @@
+#
+мусор
+node_module
+node_modules
+ # Игнорируется папка node_modules
+node_modules 
+/node_modules
+/node_modules/
