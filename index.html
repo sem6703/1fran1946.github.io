@@ -1,63 +1,491 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <link rel="chortcut icon" type="image/x-icon" href="favicon.ico">
-  <title>Fran1946 site</title>
-<style>
-body {text-align: center; background: navy;}
-</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/my.ico">
+  <link href="./font.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <title>landing-5</title>
+  <style>
+  
+  body {}
+  h1 {font-family: p; font-size: 84px; line-height: 100px;
+  width: 100%;
+  max-width:658px;
+  background: none;
+  }  
+  @media screen and (max-width: 400px) {h1 {font-size: 52px; line-height: 64px;}}   
+  @media screen and (max-width: 350px) {h1 {font-size: 40px; line-height: 50px;}}  
+  h2 {font-family: p; font-size: 52px; line-height: 64px;text-align: center;}
+  @media screen and (max-width: 350px) {h2 {font-size: 32px; line-height: 44px;}}
+  h3 {padding: 4px 0 7px;font-family: p; font-size: 32px; line-height: 44px;}
+  h4 {padding: 4px 0 7px;font-family: p; font-size: 23px; line-height: 32px;}  
+  
+  
+  .ball {position: absolute;background: green; top:0;right:0;}
+  .ball:after {position: absolute;content: ''; display: block;width:139px; height:334px;
+  background: #0d0d0e;
+  bottom:0; left:0; 
+  border-top: 153px solid  black;
+  }
+  
+
+  
+  .txt {
+  
+  width: 100%;
+  max-width:641px;}
+  
+  .logo ul {display: flex;}
+  .logo li {padding-left: 55px;}
+ @media screen and (max-width: 700px) {.logo ul {display: none;}} 
+ /**************margin: auto; vertical-align: middle;*********************************/ 
+ .slid {overflow: hidden;}
+ 
+ 
+ 
+ .wat_1 fieldset {padding: 4px 0 7px;border: none;width: fit-content;text-align:center;font-family: s; font-size: 16px; line-height: 20px; }
+ .wat_1 legend {padding: 4px 0 7px;text-align:center;font-family: p; font-size: 56px; line-height: 56px;}
+ .wat_3 {display: flex; justify-content: space-between;align-items: center;}
+ @media screen and (max-width: 830px) {
+ .wat_3{display: block;text-align: center;}
+  .wat_4{margin:0 auto;}
+ }
+ 
+.crue {width: 100%;
+display: flex; justify-content: space-between;align-items: flex-start;
+flex-wrap: wrap; row-gap: 60px;} 
+ .crue li {
+ padding: 20px 0 0 20px;
+ position: relative;
+ display: block;
+ width:388px; height: 225px;/*fit-content;*/
+ border: 1px solid white;
+ background: grey;
+ overflow: hidden;
+ }
+ .crue li::after {content:'';position: absolute;display: block;width: 50px;height:1px; 
+ top:0; right: 0;
+ background:white;
+ b0order-radius: 50%; 
+ transform: translate(8px,16px) rotate(45deg);
+ }
+ .c_1 {padding: 4px 0 7px;font-family: s; font-size: 16px; line-height: 26px;
+ max-width:222px;}
+@media screen and (max-width: 1305px) {.crue {justify-content:center; gap:20px;}} 
+ 
+ 
+ 
+#fm_1{padding: 3px 13px;color: #000;border: none;background-color:#ffffff70;width: 456px; height: 50px;flex-shrink: 2}
+#fm_2{border: none;background:#d400b3;width: 144px; min-width: 44px; height: 50px;flex-shrink: 0;}
+@media screen and (max-width: 756px) {
+#fm_1{width:70%;}
+#fm_2{width:30%;}
+} 
+ 
+  .pop__card {padding: 40px 0; display:flex;justify-content: space-between; row-gap: 30px;
+background: olive; flex-wrap: wrap;}
+  .pop__card li {padding: 0px 0 4px;position: relative;width:100%;max-width:369px; text-align: center;
+  overflow: hidden;
+  }
+  .pop__card img {margin-bottom: 44px;}
+  .pop__card a {margin: 11px 0 16px;}
+@media screen and (max-width: 837px) {.pop__card {display:flex;justify-content: center;}}  
+  
+.narrow {margin: 45px auto 330px;position: relative;
+max-width:878px; width: 90%;height:300px;
+b0order:2px solid cyan;}   
+ .narrow li {padding-bottom:5px;display: flex;justify-content: center; align-items: center;
+ background: #ffffff77;
+ width: 314px; height:118px;position: absolute;b0order: 1px dotted red;} 
+ .narrow li:nth-child(5) {top:0;right:0;} 
+ .narrow li:nth-child(4) {top:0;left:0;}
+ .narrow li:nth-child(3) {bottom:0;right:0;}
+ .narrow li:nth-child(2) {bottom:0;left:0;} 
+ .narrow li:nth-child(1) {top:50%;right:50%;transform: translate(50%,-50%);} 
+ .narrow li img { display: block;background: none;}
+@media screen and (max-width: 680px) {
+.narrow{height: calc( 5 * 118px )}
+ .narrow li{width:100%;}/*position: static;*/
+ .narrow li:nth-child(1) {top:calc(0 * 100px);left:0;);transform: none;}  
+ .narrow li:nth-child(2) {top:calc(1 * 100px);left:0;);} 
+ .narrow li:nth-child(3) {top:calc(2 * 100px);left:0;);}
+ .narrow li:nth-child(4) {top:calc(3 * 100px);left:0;);} 
+ .narrow li:nth-child(5) {top:calc(4 * 100px);left:0;);} 
+ 
+} 
+ 
+ 
+  .nev > * {width: 90%;max-width: 528px;text-align: center;background: none;}
+  footer ul {display: flex;}
+  footer li {cursor: pointer;}
+  .soc img {background: none;}
+  .soc li {display: flex; justify-content: center; align-items: center;width:46px; height:46px;background:#C4C4C477;
+border:1px solid #E5E5E5; border-opacity: 1;}
+	.soc li:hover {background:#d400b3;}
+  
+  .btn {padding: 7px 37px;display: inline-block;font-family: p; font-size: 18px; line-height: 20px;background:#d400b3;}
+  
+  
+ .ppw {background: linear-gradient(to right, #262627 50%, #0d0d0e 50%, #0d0d0e 100%);} 
+  .pp{display: grid; grid-template-columns:1fr 1fr;}
+@media screen and (max-width: 912px) {
+ .ppw {background: linear-gradient(to top, #262627 50%, #0d0d0e 50%, #0d0d0e 100%);} 
+.pp{display: grid; grid-template-columns:1fr ;grid-template-rows:1fr 1fr;}/*display: block;*/
+.pp div:nth-child(1){order:2}
+.pp div:nth-child(2){order:1}
+
+}
+
+.tre_1{margin-bottom: 93px;}
+.tre_4{color: white;}
+.tre_5{color:#d400b4;}
+.tre {margin-top:27px;column-count:2; gap: 10%;}
+@media screen and (max-width: 550px) {.tre {column-count:1;}}
+  </style>  
 </head>
 <body>
-<svg width="105" height="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<defs>
-  <circle x="0.5" y="0.5" r="1.5" style="fill:blue;stroke:blue;" id="junction"/>
-</defs>
-<path d="M52.5,15.5 v60" stroke="green" fill="none"/>
-<path d="M52.5,15.5 63,35 72,55 80,75" stroke="green" fill="none"/>
-<path d="M52.5,15.5 41,35 32,55 24,75" stroke="green" fill="none"/>
-<path d="M22.5,55.5 10,75" stroke="green" fill="none"/>
-<path d="M42.5,55.5 38,75" stroke="green" fill="none"/>
-<path d="M62.5,55.5 66,75" stroke="green" fill="none"/>
-<path d="M82.5,55.5 94,75" stroke="green" fill="none"/>
-<!-- Соединения -->
-<use xlink:href="#junction" transform="translate(52,15)"/>
+<header class="container-wide" style="position:relative;">
+<div class="ball" style="d0isplay: none; width:100%; max-width: 811px;">
+	<img src="img/pic1.png" alt="ono" style="display: block;width:100%;">
+</div>
 
-<use xlink:href="#junction" transform="translate(41,35)"/>
-<use xlink:href="#junction" transform="translate(52,35)"/>
-<use xlink:href="#junction" transform="translate(63,35)"/>
+<div class="container header" style="z-index: 14;
+">
 
-<use xlink:href="#junction" transform="translate(22,55)"/>
-<use xlink:href="#junction" transform="translate(32,55)"/>
-<use xlink:href="#junction" transform="translate(42,55)"/>
-<use xlink:href="#junction" transform="translate(52,55)"/>
-<use xlink:href="#junction" transform="translate(62,55)"/>
-<use xlink:href="#junction" transform="translate(72,55)"/>
-<use xlink:href="#junction" transform="translate(82,55)"/>
+<div  class="logo" style="display: flex; align-items: center;width: fit-content;
+background: none;
+">
+<img src="img/logo.png" alt="" style="display: block;">
+<ul>
+<li>Marketplace
+<li>Artists
+<li>Contact
+</ul>
+</div>
 
 
-<use xlink:href="#junction" transform="translate(3,75)"/>
-<use xlink:href="#junction" transform="translate(10,75)"/>
-<use xlink:href="#junction" transform="translate(17,75)"/>
-<use xlink:href="#junction" transform="translate(24,75)"/>
-<use xlink:href="#junction" transform="translate(31,75)"/>
-<use xlink:href="#junction" transform="translate(38,75)"/>
-<use xlink:href="#junction" transform="translate(45,75)"/>
 
-<use xlink:href="#junction" transform="translate(52,75)"/>
+<ul><li class="btn">Buy Template</ul>
 
-<use xlink:href="#junction" transform="translate(59,75)"/>
-<use xlink:href="#junction" transform="translate(66,75)"/>
-<use xlink:href="#junction" transform="translate(73,75)"/>
-<use xlink:href="#junction" transform="translate(80,75)"/>
-<use xlink:href="#junction" transform="translate(87,75)"/>
-<use xlink:href="#junction" transform="translate(94,75)"/>
-<use xlink:href="#junction" transform="translate(101,75)"/>
+	<ol class="header__burger header__listBurger mmm">
+		<li>
+		<svg width="35" height="24" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect x="0" y="0" width="35" height="5" fill="white" />
+			<rect x="0" y="10" width="35" height="5" fill="white" />
+			<rect x="0" y="20" width="35" height="5" fill="white" />
+		</svg></li>
+	</ol>
+</div>	
+</header>
+
+
+
+<section class="container dis" style="padding:73px 0 120px;display:flex;justify-content: space-between;align-items:flex-start;">
+<!--
+<div style="position: relative; width:12px; height:12px;"></div>
+-->
+<div class="c0ontainer" style="p0adding-left: 188px; d0isplay: none;
+p0adding-top:217px;
+p0osition: absolute; z-index:3;background: none;">
+<h1>Discover rare digital art and collect NFT’s</h1>
+<div class="txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum.
+</div></div>
+
+
+
+
+
+</section>
+<script>/****flex-wrap: wrap;*-wide**/</script>
+<script>/*****************************/</script>
+<script>/*****************************/</script>
+<script>/*****************************/</script>
+<script>/*****************************/</script>
+
+<section class="container-wide wat" style="background: #0d0d0e;">
+<div style="width:100%;max-width:700px;background: #262627;">
+<div class="wat_2" style="margin:0 auto;
+display: flex;align-items: center;width: fit-content; gap: 13px;height:120px;
+font-family: p; font-size: 32px; line-height: 44px;">Watch video 
+
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="42" height="42" fill="white"/>
+<path d="M28.9947 20.5508C29.3687 20.7335 29.3687 21.2665 28.9947 21.4493L17.2623 27.1808C16.9302 27.3431 16.5429 27.1013 16.5429 26.7316V15.2684C16.5429 14.8988 16.9302 14.6569 17.2623 14.8192L28.9947 20.5508Z" fill="#D500B3"/>
+</svg>
+</div>
+</div>
+
+<div class="container-wide" style="padding: 113px 0 0;background: #262627;">
+<div class="container wat_3" style="background: #262627;">
+<div class="wat_4" style="width:90%; max-width:395px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+</div>
+
+<ul class="wat_1" style="gap:20px; display: flex;justify-content: center;flex-wrap: wrap;
+gap:30px 50px;">
+<li><fieldset><legend>17K</legend>Artwork</fieldset>
+<li><fieldset><legend>4.5K</legend>Auctions</fieldset>
+<li><fieldset><legend>23</legend>Artist</fieldset>
+</ul>
+</div>
+</div>
+</section>
+<script>/*********************************row-gap: 30px;******/</script>
+<section class="container-wide sli" style="padding: 192px 0 180px; background: #262627;">
+<div class="slid">
+<div class="tape" style="display:flex;justify-content:flex-start;gap:56px;">
+<img src="img/pic2.png" alt="">
+<img src="img/pic3.png" alt=""> 
+<img src="img/pic4.png" alt="">
+</div>
+</div>
+
+<div class="slid" style="padding-top: 56px;">
+<div class="tape" style="display:flex;justify-content:flex-end;gap:56px;">
+<img src="img/pic5.png" alt="">
+<img src="img/pic6.png" alt="">
+<img src="img/pic7.png" alt="">
+</div>
+</div>
+</section>
+<script>/***************************************/</script>
+<section class="container cre" style="padding: 177px 0 0; background: #0d0d0e;">
+<h2>Create and sell NFTs</h2>
+<ul class="crue" style="margin-top: 35px;">
+
+<li><div style="width:59px;height:59px;background:white; border-radius: 50%;"></div>
+<h4 style="padding:7px 0 8px;">Connect your wallet</h4><p class="c_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+<li><div style="width:59px;height:59px;background:white; border-radius: 50%;"></div>
+<h4 style="padding:7px 0 8px;">Explore our marketplace</h4><p class="c_1">Lorem ipsum dolor sit amet, consectetur</p>
+<li><div style="width:59px;height:59px;background:white; border-radius: 50%;"></div>
+<h4 style="padding:7px 0 8px;">Create your collection</h4><p class="c_1">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+</ul>
+</section>
+<script>/****flex-wrap: wrap;*linear-gradient(rgba(255,0,0), rgba(0,0,255)**/</script>
+<section class="container" style="padding: 185px 0 52px;">
+
+<h2 style="text-align:left;">Trending this week</h2>
+<div class="tre">
+<p style="padding: 1px 0 60px;">
+Lorem ipsum dolor sit amet, consectetur dolore adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<p>
+
+<article class="tre_1">
+<h3 class="tre_2">Mandy Ross</h3>
+<div class="tre_3" style="display: flex;justify-content: space-between;font-family: s; font-size: 16px; line-height: 20px;">
+<span class="tre_4">Miricale Culture</span><span class="tre_5">3.24 ETH</span>
+</div>
+<div><img class="tre_6" src="img/pic8.png" alt="" style="display:block;width:100%;"></div>
+</article>
+
+
+
+<article class="tre_1">
+<h3 class="tre_2">Lewis Lowie</h3>
+<div class="tre_3" style="display: flex;justify-content: space-between;">
+<span class="tre_4">Miricale Culture</span><span class="tre_5">3.24 ETH</span>
+</div>
+<div><img class="tre_6" src="img/pic9.png" alt="" style="display:block;width:100%;"></div>
+</article>
+
+
+
+
+
+
+<article class="tre_1">
+<h3 class="tre_2">Dan Gatty</h3>
+<div class="tre_3" style="display: flex;justify-content: space-between;">
+<span class="tre_4">Miricale Culture</span><span class="tre_5">3.24 ETH</span>
+</div>
+<div><img class="tre_6" src="img/pic10.png" alt="" style="display:block;width:100%;"></div>
+</article>
+
+<article class="tre_1">
+<h3 class="tre_2">Jason Riley</h3>
+<div class="tre_3" style="display: flex;justify-content: space-between;">
+<span class="tre_4">Miricale Culture</span><span class="tre_5">3.24 ETH</span>
+</div>
+<div><img class="tre_6" src="img/pic11.png" alt="" style="display:block;width:100%;"></div>
+</article>
+
+
+
+<article class="tre_1">
+<h3 class="tre_2">Mandy Ross</h3>
+<div class="tre_3" style="display: flex;justify-content: space-between;">
+<span class="tre_4">Miricale Culture</span><span class="tre_5">3.24 ETH</span>
+</div>
+<div><img class="tre_6" src="img/pic12.png" alt="" style="display:block;width:100%;"></div>
+</article>
+
+<article class="tre_1">
+<h3 class="tre_2">Mandy Ross</h3>
+<div class="tre_3" style="display: flex;justify-content: space-between;">
+<span class="tre_4">Miricale Culture</span><span class="tre_5">3.24 ETH</span>
+</div>
+<div><img class="tre_6" src="img/pic13.png" alt="" style="display:block;width:100%;"></div>
+</article>
+
+
+<div style="padding: 13px 0 70px;display: flex;justify-content: flex-end;;">
+<h5 style="font-family: p; font-size: 18px; line-height: 20px;color:#d400b3;">
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+<path d="M14 3H18V18H14V3Z" fill="#D400B3"/>
+<path d="M3 0H18V4H3V0Z" fill="#D400B3"/>
+</svg><br>
+View marketplace</h5>
+</div>
+<div>
+</section>
+
+
+<script>/****flex-wrap: wrap;*linear-gradient(rgba(255,0,0), rgba(0,0,255)**/</script>
+<section class="container-wide ppw" style="">
+
+
+<div class="container pp" style="">
+<div style="margin:0 auto;padding:44px 0 4px;width:fit-content;background: #262627"><h5 style="font-family: p; font-size: 18px; line-height: 20px;color:#d400b3;">
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none">
+<path d="M14 3H18V18H14V3Z" fill="#D400B3"/>
+<path d="M3 0H18V4H3V0Z" fill="#D400B3"/>
+</svg><br>
+View all artists</h5>
+<p style="padding: 0px 0 0px;">Lorem ipsum dolor sit amet,<p></div>
+<div style="background: none;
+display: flex;justify-content: center; align-items: center;
+"><h2>Popular artists</h2></div>
+</div>
+</section>
+<script>/****flex-wrap: wrap;***/</script>
+<section class="container-wide pop" style="padding: 0px 0px 82px;background: #262627;">
+<script>/****flex-wrap: wrap;*
+<hr>
+<div style="display: grid;grid-template-columns: 1fr 1fr">
+	<div style="background: navy;color:#d400b3;">View all artists
+	Lorem ipsum dolor sit amet, tempor consectetur dolore.</div>
+	<div style="background: #0d0d0e;"><h2>Popular artists</h2></div>
+</div>
+**/</script>
+
+<ul class="container pop__card" style="background: #262627;">
+
+<li>
+<img src="img/pic14.png" alt="">
+<div style="position: absolute;width:100px;height:100px;top:148px;left: 50%;transform: translateX(-50%);background:url(img/pic17.png);"></div>
+<h3>Jason Santigo</h3>
+<a class="btn">Follow</a>
+
+<li>
+
+<img src="img/pic15.png" alt="">
+<div style="position: absolute;width:100px;height:100px;top:148px;left: 50%;transform: translateX(-50%);background:url(img/pic18.png);"></div>
+<h3>Dan Rogan</h3>
+<a class="btn">Follow</a>
+<li>
+<img src="img/pic16.png" alt="">
+<div style="position: absolute;width:100px;height:100px;top:148px;left: 50%;transform: translateX(-50%);background:url(img/pic19.png);"></div>
+<h3>Rachel Mason</h3>
+<a class="btn">Follow</a>
+</ul>
+</section>
+<script>/*********<img src="img/pic20.png" alt="" style=""></div>******overflow: hidden;****************text-align: center;***********/</script>
+<section class="container back" style="padding: 121px 0px 2px;position: relative;">
+<h2>Backed by the best</h2>
+
+<p class="p2" style="margin: 0 auto;text-align: center; width:100%; max-width: 444px;overflow: hidden;">Lorem ipsum dolor sit amet, consectetur dolore adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+
+
+
+
+<ul class="narrow" style="">
+<li><img src="img/s1.svg" alt="">
+<li><img src="img/s2.svg" alt="">
+<li><img src="img/s3.svg" alt="">
+<li><img src="img/s4.svg" alt="">
+<li><img src="img/s5.svg" alt="">
+</ul>
+
+
+
+
+
+<div class="nev" style="padding: 135px 0 71px; position:relative;
+display: flex;justify-content: center;align-items: center; 
+flex-direction: column; 
+background: #262627;border-bottom: 5px solid #d400b3;">
+<h2 style="">Never miss a drop</h2>
+<div class="" style="  /*hand*/
+background-color: transparent;
+position: absolute;
+top:-630px;
+width: 100%;height:733px;
+background-image: url(img/pic20.png);
+background-position: center;
+background-size: auto 100%;
+background-repeat: no-repeat;
+b0order: 1px solid yellow;
+d0isplay: none;
+">
+</div>
+<p style="">Lorem ipsum dolor sit amet, consectetur dolore adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+<form id="fm" style="margin:22px auto 4px; display: flex;width: 90%;">
+<input id="fm_1" type="text" style=";">
+<input id="fm_2" type="submit" value="" style="">
+</form>
+</div>
+</section>
+<script>/********************width:fit-content;**********************/</script>
+<footer class="container" style="padding: 68px 0 29px;b0ackground: red;display: flex;justify-content: space-between;align-items: center; border-bottom: 1px solid white;">
+<div  class="logo" style="display: flex; align-items: center;width: fit-content;
+background: none;
+">
+<img src="img/logo.png" alt="" style="display: block;">
+<ul>
+<li>Marketplace
+<li>Artists
+<li>Contact
+</ul>
+</div>
+
+<ul class="soc" style="gap:12px">
+<li><img src="img/pic21.png" alt="">
+<li><img src="img/pic22.png" alt="">
+<li><img src="img/pic23.png" alt="">
+</ul>
+
+<script>/********* display: flex; justify-content: center;flex-wrap: wrap;********/</script>
+</footer>
+<footer class="container" style="padding: 25px 0 25px;text-align: center;font-size: 16pz; line-height: 20px;">
+Crafted by
+Marion & Co.
+| Powered by
+Webflow
+|
+More templates
+|
+License
+|
+Style Guide
+</footer>
+
+<script>
+window.addEventListener('resize',()=>{console.log(window.innerWidth)});
+fm.addEventListener('submit',(e)=>{e.preventDefault();fm_1.value='';});
+
+/* window.screen.width 
+<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H46V46H0V0Z" fill="#C4C4C4" fill-opacity="0.2"/>
+<path d="M0.5 0.5H45.5V45.5H0.5V0.5Z" stroke="#E5E5E5" stroke-opacity="0.3"/>
 </svg>
 
-<h1>The Site Is Good...</h1>
-  <script>/*
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-  
-  */</script>
-</body></html>
+
+*/
+
+</script>   
+</body>
+</html>

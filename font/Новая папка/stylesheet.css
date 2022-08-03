@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Paytone One';
+    src: url('PaytoneOne-Regular.eot');
+    src: local('Paytone One Regular'), local('PaytoneOne-Regular'),
+        url('PaytoneOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('PaytoneOne-Regular.woff2') format('woff2'),
+        url('PaytoneOne-Regular.woff') format('woff'),
+        url('PaytoneOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
